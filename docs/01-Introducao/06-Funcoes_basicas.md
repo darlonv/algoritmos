@@ -21,21 +21,21 @@ A saída de dados que utilizaremos aqui é a tela. Para mostrar uma mensagem na 
 
 
 <Tabs groupId='language'>
-  <TabItem value="apple" label="Portugol" default>
+  <TabItem value="portugol" label="Portugol" default>
 
   ```
   escreva("Olá Mundo");
   ```
 
   </TabItem>
-  <TabItem value="orange" label="Java">
+  <TabItem value="java" label="Java">
 
   ```java
   System.out.println("Olá Mundo");
   ```
 
   </TabItem>
-  <TabItem value="banana" label="Python">
+  <TabItem value="python" label="Python">
 
   ```python
   print("Olá Mundo")
