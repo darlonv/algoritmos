@@ -5,29 +5,6 @@ sidebar_position: 7
 **Exemplo**
 
 
-`````{tab-set}
-
-````{tab-item} Portugol
-
-```
-
-```
-````
-
-````{tab-item} Java
-
-```java
-
-```
-````
-
-````{tab-item} Python 3
-```python
-
-```
-````
-
-`````
 
 # Expressões
 Uma expressão é uma combinação de elementos, que podem ser valores, variáveis, operadores e chamadas a funções. Com o uso das expressões é possível realizar cálculos que produzem novos valores, ou seja, fazem a transformação das informações.
