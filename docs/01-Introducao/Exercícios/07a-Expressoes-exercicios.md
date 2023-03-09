@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 ---
 
-# Exercícios
+# Expressões
 
 - Faça um programa que pergunta um número ao usuário, e em seguida mostra o antecessor e o sucessor desse número.  
 
