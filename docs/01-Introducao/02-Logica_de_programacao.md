@@ -46,20 +46,14 @@ colocar a lâmpada nova
 ```
 </details>
 
-
-```python
-mm("""
-flowchart TD
-    inicio(Inicio)
-    processamento[Pegar uma escada<br>colocar a escada abaixo da lampada<br>pegar uma lampada nova<br>subir na escada<br>retirar a lampada velha<br>colocar a lampada nova]
-    fim(Fim)
-    inicio --> processamento
-    processamento -->fim
-""")
+```mermaid
+flowchart TD;
+  inicio(Início)
+  processamento["Pegar uma escada"<br>colocar a escada abaixo da lampada<br>pegar uma lampada nova<br>subir na escada<br>retirar a lampada velha<br>colocar a lampada nova]
+  fim(Fim)
+  inicio --> processamento
+  processamento -->fim
 ```
-
-
-<img src="https://mermaid.ink/img/CmZsb3djaGFydCBURAogICAgaW5pY2lvKEluaWNpbykKICAgIHByb2Nlc3NhbWVudG9bUGVnYXIgdW1hIGVzY2FkYTxicj5jb2xvY2FyIGEgZXNjYWRhIGFiYWl4byBkYSBsYW1wYWRhPGJyPnBlZ2FyIHVtYSBsYW1wYWRhIG5vdmE8YnI+c3ViaXIgbmEgZXNjYWRhPGJyPnJldGlyYXIgYSBsYW1wYWRhIHZlbGhhPGJyPmNvbG9jYXIgYSBsYW1wYWRhIG5vdmFdCiAgICBmaW0oRmltKQogICAgaW5pY2lvIC0tPiBwcm9jZXNzYW1lbnRvCiAgICBwcm9jZXNzYW1lbnRvIC0tPmZpbQo="/>
 
 
 **Exercício**
