@@ -2,18 +2,6 @@
 sidebar_position: 2
 ---
 
-```python
-import base64
-from IPython.display import Image, display
-import matplotlib.pyplot as plt
-
-def mm(graph):
-  graphbytes = graph.encode("ascii")
-  base64_bytes = base64.b64encode(graphbytes)
-  base64_string = base64_bytes.decode("ascii")
-  display(Image(url="https://mermaid.ink/img/" + base64_string))
-```
-
 # Lógica de programação
 
 O quê é a lógica?
@@ -35,8 +23,7 @@ Todos os cascavelenses são paranaenses.
 Logo, todos os cascavelenses são brasileiros.
 ```
 
-## Lógica de programação
-Consiste na ordem da razão e organização de processos de raciocínio e simbolização formais na programação de sistemas computacionais.
+A Lógica de programação consiste na ordem da razão e organização de processos de raciocínio e simbolização formais na programação de sistemas computacionais.
 
 ## Algoritmo
 Um **algoritmo** é uma sequência de passos organizada, de maneira que a **execução** dos passos possibilita atingir um objetivo.
@@ -46,8 +33,10 @@ Junto à idéia de algoritmo vem a noção de **ordem**, na execução dos passo
 **Exemplo**
 - Como faríamos para trocar uma lâmpada?
 
-```{dropdown} Resposta
-```bash
+<details>
+  <summary>Resposta</summary>
+
+```bash showLineNumbers
 pegar uma escada
 colocar a escada abaixo da lâmpada
 pegar uma lâmpada nova
@@ -55,6 +44,7 @@ subir na escada
 retirar a lâmpada velha
 colocar a lâmpada nova
 ```
+</details>
 
 
 ```python

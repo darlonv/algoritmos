@@ -2,12 +2,14 @@
 sidebar_position: 1
 ---
 
-# Introdução a algoritmos
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs>
+# Introdução a algoritmos
+
+
+
+<!-- <Tabs>
   <TabItem value="apple" label="Apple" default>
     This is an apple 🍎
   </TabItem>
@@ -17,4 +19,4 @@ import TabItem from '@theme/TabItem';
   <TabItem value="banana" label="Banana">
     This is a banana 🍌
   </TabItem>
-</Tabs>
+</Tabs> -->
