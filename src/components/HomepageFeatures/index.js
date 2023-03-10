@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Algoritmos',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/algorithm.svg').default,
     description: (
       <>
         Lógica de programação, estruturas de seleção, repetição e funções.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Estruturas de Dados',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/sort_2.svg').default,
     description: (
       <>
         Vetores, matrizes, listas, filas e pilhas.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Busca e Ordenação',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/sort.svg').default,
     description: (
       <>
         Busca sequencial e busca binária. Bubble Sort, Selection Sort, 
