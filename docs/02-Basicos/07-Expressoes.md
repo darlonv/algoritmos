@@ -39,7 +39,7 @@ Para associar um valor a uma variável utiliza-se o operador **←** ao lado dir
 
   Um exemplo de expressão é
 
-  ```java
+  ```js
   soma = 5 + 4
   ```
 
@@ -186,7 +186,7 @@ escreva(valor_f);
   |`div(x,y)` | quociente da divisão inteira.| `div(20,6) = 3` |
 
   **Exemplos**
-  ```java
+  ```js
   int valor_i;
   float valor_f;
 
@@ -265,7 +265,7 @@ São operadores de comparação entre valores. As expressões realizadas com est
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```java
+  ```js
   System.out.println("Olá Mundo");
   ```
 
@@ -320,7 +320,7 @@ escreva(12<>12); //falso
 |`<=` |menor ou igual| 
 
 **Exemplos**  
-```java
+```js
 System.out.println(6>7); //false
 System.out.println(6<7); //true
 System.out.println(6==7); //false
@@ -420,7 +420,7 @@ A negação corresponde ao **não** lógico. Consiste na inversão lógica do va
 |Operador|Função|
 |--------|------|
 |`&&`|**e** lógico (conjunção)|
-|`\|\|` |**ou** lógico (disjunção)|
+| <code> &#124;&#124; </code> |**ou** lógico (disjunção)|
 |`!`|**não** lógico (negação)|
 
   </TabItem>
