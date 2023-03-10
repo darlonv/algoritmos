@@ -49,21 +49,21 @@ A saída de dados que utilizaremos aqui é a tela. Para mostrar uma mensagem na 
 
 
 <Tabs groupId="language">
-  <TabItem value="apple" label="Portugol" default>
+  <TabItem value="portugol" label="Portugol" default>
 
   ```
   escreva("Bom dia, José");
   ```
 
   </TabItem>
-  <TabItem value="orange" label="Java">
+  <TabItem value="java" label="Java">
 
   ```java
   System.out.println("Bom dia, José");
   ```
 
   </TabItem>
-  <TabItem value="banana" label="Python">
+  <TabItem value="python" label="Python">
 
   ```python
   print("Bom dia, José")
@@ -77,7 +77,7 @@ A saída de dados que utilizaremos aqui é a tela. Para mostrar uma mensagem na 
 - Mostrando um valor na tela
 
 <Tabs groupId="language">
-  <TabItem value="apple" label="Portugol" default>
+  <TabItem value="portugol" label="Portugol" default>
 
   ```
   altura ← 50
@@ -85,7 +85,7 @@ A saída de dados que utilizaremos aqui é a tela. Para mostrar uma mensagem na 
   ```
 
   </TabItem>
-  <TabItem value="orange" label="Java">
+  <TabItem value="java" label="Java">
 
   ```java
   int altura = 50;
@@ -93,7 +93,7 @@ A saída de dados que utilizaremos aqui é a tela. Para mostrar uma mensagem na 
   ```
 
   </TabItem>
-  <TabItem value="banana" label="Python">
+  <TabItem value="python" label="Python">
 
   ```python
   altura = 50
@@ -115,16 +115,16 @@ Saída na tela:
 **Exemplo**  
 
 <Tabs groupId="language">
-  <TabItem value="apple" label="Portugol" default>
+  <TabItem value="portugol" label="Portugol" default>
 
   ```
-  nome ← "Dunga";
-  idade ← 35;
+  caractere: nome ← "Dunga";
+  inteiro: idade ← 35;
   escreva(nome, "tem", idade, "anos de idade.");
   ```
 
   </TabItem>
-  <TabItem value="orange" label="Java">
+  <TabItem value="java" label="Java">
 
   ```java
   String nome = "Dunga";
@@ -135,7 +135,7 @@ Saída na tela:
   **Atenção** ao **f** no `printf`!
 
   </TabItem>
-  <TabItem value="banana" label="Python">
+  <TabItem value="python" label="Python">
 
   ```python
   nome = Dunga
@@ -164,7 +164,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
 - Pergunte ao usuário seu nome e idade. Em seguida, mostre na tela as informações digitadas.
 
 <Tabs groupId="language">
-  <TabItem value="apple" label="Portugol" default>
+  <TabItem value="portugol" label="Portugol" default>
 
   ```
   inicio;
@@ -186,7 +186,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
   ```
 
   </TabItem>
-  <TabItem value="orange" label="Java">
+  <TabItem value="java" label="Java">
 
   ```java
   //Variáveis
@@ -208,7 +208,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
   **Atenção** ao uso da função `printf`.
 
   </TabItem>
-  <TabItem value="banana" label="Python">
+  <TabItem value="python" label="Python">
 
   ```python
   #Entrada
@@ -229,7 +229,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
 - Solicite ao usuário que digite um número. Em seguida, mostre na tela o número digitado.
 
 <Tabs groupId="language">
-  <TabItem value="apple" label="Portugol" default>
+  <TabItem value="portugol" label="Portugol" default>
 
   ```
   inicio;
@@ -247,7 +247,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
   ```
 
   </TabItem>
-  <TabItem value="orange" label="Java">
+  <TabItem value="java" label="Java">
 
   ```java
   import java.util.Scanner;
@@ -264,7 +264,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
   ```
 
   </TabItem>
-  <TabItem value="banana" label="Python">
+  <TabItem value="python" label="Python">
 
   ```python
   valor = input("Digite um valor: ")
@@ -280,7 +280,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
 <details>
   <summary>Resposta</summary>
 <Tabs groupId="language">
-  <TabItem value="apple" label="Portugol" default>
+  <TabItem value="portugol" label="Portugol" default>
 
   ```
   inicio;
@@ -298,7 +298,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
   ```
 
   </TabItem>
-  <TabItem value="orange" label="Java">
+  <TabItem value="java" label="Java">
 
   ```java
   import java.util.Scanner;
@@ -315,7 +315,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
   ```
 
   </TabItem>
-  <TabItem value="banana" label="Python">
+  <TabItem value="python" label="Python">
 
   ```python
   #entrada
