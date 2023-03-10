@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 # Expressões
 
-1. Faça um programa que pergunta um número ao usuário, e em seguida mostra o antecessor e o sucessor desse número.  
+- Faça um programa que pergunta um número ao usuário, e em seguida mostra o antecessor e o sucessor desse número.  
 
 <details>
   <summary>Resposta</summary>
