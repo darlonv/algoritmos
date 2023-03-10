@@ -8,6 +8,12 @@ import TabItem from '@theme/TabItem';
 # Introdução a algoritmos
 
 <!-- 
+<details>
+  <summary>Resposta</summary>
+</details> 
+-->
+
+<!-- 
 <Tabs groupId='language'>
   <TabItem value="portugol" label="Portugol" default>
 
@@ -18,7 +24,7 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```java
+  ```js
   System.out.println("Olá Mundo");
   ```
 
