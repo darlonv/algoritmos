@@ -89,3 +89,6 @@ flowchart TD
     end
     inicio --> variaveis --> calculo --> fim
 ```
+
+<!-- ## Blocos
+ -->

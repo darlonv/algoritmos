@@ -405,6 +405,9 @@ A negação corresponde ao **não** lógico. Consiste na inversão lógica do va
 |V|F|
 |F|V|
 
+
+Em resumo, para os operadores lógicos temos:
+
 <Tabs groupId='language'>
   <TabItem value="portugol" label="Portugol" default>
 
@@ -493,8 +496,12 @@ As prioridades definem quais operadores serão executados primeiro. Caso possuam
 |potência, raiz| `pot` `rad`|
 |multiplicação, divisão|`*` `/` `div` `mod`|
 |adição e subtração|`+` `-`|
+|relacionais|`=` `>` `<` `>=` `<=` `<>`|
+|não lógico|`não`|
+|e lógico|`e`|
+|ou lógico|`ou`|
 |atribuição|`←`|
-Adaptado de [FORBELLONE 2022, p.26](https://plataforma.bvirtual.com.br/Leitor/Publicacao/200078/pdf/51).
+Adaptado de [FORBELLONE 2022, p.30](https://plataforma.bvirtual.com.br/Leitor/Publicacao/200078/pdf/54).
 
   </TabItem>
   <TabItem value="java" label="Java">
