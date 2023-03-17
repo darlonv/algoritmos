@@ -134,7 +134,9 @@ A ideia é que os blocos agrupem determinadas tarefas dentro do código.
 
     //Entrada
     entrada = new Scanner(System.in);
+    System.out.print("Base: ");
     base   = entrada.nextFloat();
+    System.out.print("Altura: ");
     altura = entrada.nextFloat();
 
     //Processamento
@@ -164,7 +166,7 @@ A ideia é que os blocos agrupem determinadas tarefas dentro do código.
   ```python showLineNumbers
     # Variáveis e entrada
     base   = float(input("Base: "))
-    altura = float(input("Base: "))
+    altura = float(input("altura: "))
 
     # Processamento
     area = base*altura 
@@ -175,7 +177,7 @@ A ideia é que os blocos agrupem determinadas tarefas dentro do código.
     print("Perímetro:", perimetro)
   ```
 
-Em Python, não é possível separar os blocos com este exemplo, utilizando apenas o que aprendemos até aqui. Dado que nesta linguagem a indentação define os blocos, indentálos resultaria em erro.
+Em Python, não é possível separar os blocos com este exemplo, utilizando apenas o que aprendemos até aqui. Dado que nesta linguagem a indentação define os blocos, indentá-los resultaria em erro.
 
   </TabItem>
 </Tabs>
