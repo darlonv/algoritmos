@@ -157,7 +157,7 @@ Saída na tela:
 
   A entrada de dados é a maneira como o usuário pode inserir dados para dentro do algoritmo. Aqui utilizaremos a função `leia()`.
 
-  ```parser
+  ```c showLineNumbers
   inicio;
   //variáveis
   caractere: nome;
@@ -174,7 +174,7 @@ Saída na tela:
 
   A entrada de dados é a maneira como o usuário pode inserir dados para dentro do algoritmo. Em Java utilizaremos um objeto da classe `Scanner` com seus métodos (`next`, `nextInt`..) .
 
-  ```js
+  ```c showLineNumbers
   //variaveis
   String nome;
   // highlight-next-line
@@ -194,7 +194,7 @@ Saída na tela:
 
   A entrada de dados é a maneira como o usuário pode inserir dados para dentro do algoritmo. Em Python utilizaremos a função `input()`. 
 
-  ```python
+  ```python showLineNumbers
   nome = input()
   ```
 
@@ -211,8 +211,8 @@ Perceba que no exemplo, o nome do usuário será armazenado em uma variável cha
 <Tabs groupId="language">
   <TabItem value="portugol" label="Portugol" default>
 
-  ```
-  inicio;
+  ```c showLineNumbers
+  inicio
 
   //Variáveis
   caracterer nome;
@@ -233,7 +233,7 @@ Perceba que no exemplo, o nome do usuário será armazenado em uma variável cha
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```js
+  ```c showLineNumbers
   //Variáveis
   String nome;
   int idade;
@@ -256,7 +256,7 @@ Perceba que no exemplo, o nome do usuário será armazenado em uma variável cha
   </TabItem>
   <TabItem value="python" label="Python">
 
-  ```python
+  ```python showLineNumbers
   #Entrada
   nome = input("Nome: ")
   idade = input("Idade: ")
@@ -279,8 +279,8 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
 <Tabs groupId="language">
   <TabItem value="portugol" label="Portugol" default>
 
-  ```
-  inicio;
+  ```c showLineNumbers
+  inicio
   //variaveis
   inteiro: valor;
 
@@ -297,7 +297,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```js
+  ```c showLineNumbers
   import java.util.Scanner;
   //variaveis
   int valor;
@@ -318,7 +318,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
   </TabItem>
   <TabItem value="python" label="Python">
 
-  ```python
+  ```python showLineNumbers
   valor = input("Digite um valor: ")
   print(f"O valor digitado foi {valor}")
   ```

@@ -31,8 +31,8 @@ leia(valor_1);
 leia(valor_2);
 
 //Processamento
-soma = valor_1 + valor_2;
-media = soma / 2;
+soma ← valor_1 + valor_2;
+media ← soma / 2;
 
 //Saída
 escreva("Média: ", media);
@@ -59,8 +59,8 @@ flowchart TD
         leia valor_2;
         "]
     calculo["
-        soma = valor_1 + valor_2;
-        media = soma/2;
+        soma ← valor_1 + valor_2;
+        media ← soma/2;
         "]
     saida["
         escreva(valor_1);
