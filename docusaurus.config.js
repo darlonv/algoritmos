@@ -46,7 +46,9 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/darlonv/algoritmos/tree/main/',
+            // 'https://github.com/darlonv/algoritmos/blob/main/docs/02-Basicos/06-Funcoes_basicas.md',
+            // 'https://github.com/darlonv/algoritmos/tree/main/docs/02-Basicos/06-Funcoes_basicas.md',
             remarkPlugins: [math],
             rehypePlugins: [katex],
         },
@@ -72,7 +74,7 @@ const config = {
       crossorigin: 'anonymous',
     },
   ],
-  
+
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
