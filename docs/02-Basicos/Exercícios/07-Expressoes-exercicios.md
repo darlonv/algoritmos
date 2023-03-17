@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 <Tabs groupId='language'>
   <TabItem value="portugol" label="Portugol" default>
 
-  ```
+  ```c
 inicio;
 //variaveis
 inteiro valor;
@@ -38,7 +38,7 @@ fim;
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```java
+  ```c
 //Variáveis
 int valor;
 int antecessor, sucessor;
@@ -94,25 +94,30 @@ print(f'O sucessor de {valor} é {sucessor}', )
 (Fonte: MENEZES 2019, pg. 72)
 
 1. Escreva um programa para ler as dimensões de um retângulo, com o tamanho da base ($b$) e da altura ($h$). Calcule o mostre o perímetro ($p$) e área ($a$) desse retângulo.
-$$p = 2(b+h)$$
-$$a = bh$$
-
+$$
+p = 2(b+h)\\
+a = bh
+$$  
 1. Pergunte ao usuário o valor do raio ($r$) de um círculo, e em seguida mostre o perímetro ($p$) e a área ($a$) desse círculo.
-$$p = 2\pi r$$
-$$a = \pi r^2$$
+$$
+p = 2\pi r\\
+a = \pi r^2$$
 
 1. Faça  um  algoritmo  que  leia  três  notas ($N_1$, $N_2$ e $N_3$)  de  um  aluno,  calcule  e  escreva  a  média  final  deste  aluno. Considerar que a média ($M$) é ponderada e que o peso das notas é 2, 3 e 5. A equação para o cálculo da média final é: 
-$$M = \frac{N_1 \times 2 + N_2 \times 3 + N_3 \times 5}{2+3+5}$$  
+$$
+M = \frac{N_1 \times 2 + N_2 \times 3 + N_3 \times 5}{2+3+5}
+$$  
 (Fonte: CARVALHO, 2007)
-
 1. Faça um programa que solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.  
 (Fonte: MENEZES 2019, pg. 72)
 
 1. Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a porcentagem de aumento. Exiba o valor do aumento e do novo salário.  
 (Fonte: MENEZES 2019, pg. 72)
 
-1. Peça ao usuário que informe o valor de um boleto, o percentual de juros cobrado e o número de dias em atraso. O programa deve calcular o valor total a ser pago, utilizando a fórmula 
-$$Total = Valor + Valor \times \frac{Juros}{100} \times Dias $$  
+1. Peça ao usuário que informe o valor de um boleto, o percentual de juros cobrado e o número de dias em atraso. O programa deve calcular o valor total a ser pago, utilizando a fórmula  
+$$
+Total = Valor + Valor \times \frac{Juros}{100} \times Dias
+$$  
 (Adaptado de LOPES, 2011)
 
 1. Considere que houve uma eleição, na qual três candidatos concorreram ($C_a$, $C_b$ e $C_c$). O usuário deve informar quantos votos cada candidato recebeu e quantidade de votos brancos e nulos. O programa deve calcular e mostrar a quantidade total de eleitores, o percentual de votos que cada candidato recebeu, o percentual de votos brancos e o percentual de votos nulos. O cálculo dos percentuais é dado em relação ao total de votos da eleição.  
@@ -126,8 +131,6 @@ $$Total = Valor + Valor \times \frac{Juros}{100} \times Dias $$
 
 
 ## Exercícios externos
-
-
 
 ### Beecrowd
 1. [Beecrowd 1003 - Soma Simples](https://www.beecrowd.com.br/judge/pt/problems/view/1003)
