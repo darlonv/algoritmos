@@ -29,8 +29,8 @@ antecessor = valor -1;
 sucessor   = valor +1
 
 //saida
-escreva("antecessor: ", antecessor);
-escreva("sucessor  : ", sucessor);
+escreva("O antecessor de ", valor, " é: ", antecessor);
+escreva("O sucessor de ", valor, " é:", sucessor);
 
 fim;
   ```
@@ -90,7 +90,7 @@ print(f'O sucessor de {valor} é {sucessor}', )
 
 1. Pergunte um número ao usuário, e em seguida mostre a raiz quadrada e a raiz cúbica desse número.
 
-1. Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R\\$ 60,00 por dia e R\\$ 0,15 por km rodado.  
+1. Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R\$ 60,00 por dia e R\$ 0,15 por km rodado.  
 (Fonte: MENEZES 2019, pg. 72)
 
 1. Escreva um programa para ler as dimensões de um retângulo, com o tamanho da base ($b$) e da altura ($h$). Calcule o mostre o perímetro ($p$) e área ($a$) desse retângulo.
