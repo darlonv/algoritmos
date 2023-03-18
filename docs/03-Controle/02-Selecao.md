@@ -677,5 +677,3 @@ Utilizando estruturas de seleção encadeadas, apenas duas das condições são 
 </Tabs>
 
 
-
-### Múltipla escolha
