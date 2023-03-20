@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://darlonv.github.io/algoritmos/blog"/>
     <subtitle>AED Blog</subtitle>
-    <icon>https://darlonv.github.io/algoritmos/img/favicon.ico</icon>
+    <icon>https://darlonv.github.io/algoritmos/img/favicon.svg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://darlonv.github.io/algoritmos/blog/welcome</id>
