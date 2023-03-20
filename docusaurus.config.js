@@ -10,7 +10,7 @@ const katex = require('rehype-katex');
 const config = {
   title: 'AED',
   tagline: 'Algoritmos e Estruturas de Dados',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://darlonv.github.io',
@@ -31,8 +31,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'pt-BR',
-    locales: ['pt-BR'],
+    defaultLocale: 'pt-br',
+    locales: ['pt-br'],
     path: 'i18n'
   },
 
