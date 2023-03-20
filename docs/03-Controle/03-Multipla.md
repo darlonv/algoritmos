@@ -12,8 +12,7 @@ Em situações em que precisamos testar diversos valores pontuais, poderíamos u
 **Exemplo** 
 - A região Sul do Brasil possui três estados. De acordo com o IBGE, cada estado possui uma sigla e um código. Peça ao usuário que digite a sigla do estado, e apresente na tela o nome do estado,  código do estado e em que região do país se encontra. Caso a siga do estado entrada pelo usuário não esteja cadastrada, mostre a mensagem *"Estado ainda não cadastrado no sistema."*.  
 
-<details>
-  <summary>Códigos dos estados da Região Sul</summary>
+:::note Dados
 
 |Sigla do Estado|Código|Estado            |Região|
 |---------------|------|------------------|------|
@@ -23,10 +22,7 @@ Em situações em que precisamos testar diversos valores pontuais, poderíamos u
 
 Fonte: [IBGE. Códigos dos municípios IBGE.](https://www.ibge.gov.br/explica/codigos-dos-municipios.php)
 
-</details>
-
-
-
+:::
 
 
 
