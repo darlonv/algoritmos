@@ -477,6 +477,7 @@ Desta forma, o exercício anterior poderia ser resolvido da seguinte maneira:
 Podemos observar melhor a solução deste problema utilizando fluxogramas:
 
 ```mermaid
+%%{ init: { 'flowchart': { 'curve': 'stepAfter' } } }%%
 flowchart TD
     inicio("
         Início;
