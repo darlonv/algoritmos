@@ -23,14 +23,14 @@ A saída de dados que utilizaremos aqui é a tela. Para mostrar uma mensagem na 
 <Tabs groupId='language'>
   <TabItem value="portugol" label="Portugol" default>
 
-  ```
+  ```c
   escreva("Olá Mundo");
   ```
 
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```java
+  ```c
   System.out.println("Olá Mundo");
   ```
 
@@ -51,14 +51,14 @@ A saída de dados que utilizaremos aqui é a tela. Para mostrar uma mensagem na 
 <Tabs groupId="language">
   <TabItem value="portugol" label="Portugol" default>
 
-  ```
+  ```c
   escreva("Bom dia, José");
   ```
 
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```java
+  ```c
   System.out.println("Bom dia, José");
   ```
 
@@ -79,7 +79,7 @@ A saída de dados que utilizaremos aqui é a tela. Para mostrar uma mensagem na 
 <Tabs groupId="language">
   <TabItem value="portugol" label="Portugol" default>
 
-  ```
+  ```c
   altura ← 50
   escreva(altura)
   ```
@@ -87,7 +87,7 @@ A saída de dados que utilizaremos aqui é a tela. Para mostrar uma mensagem na 
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```java
+  ```c
   int altura = 50;
   System.out.println(altura);
   ```
@@ -117,7 +117,7 @@ Saída na tela:
 <Tabs groupId="language">
   <TabItem value="portugol" label="Portugol" default>
 
-  ```
+  ```c
   caractere: nome ← "Dunga";
   inteiro: idade ← 35;
   escreva(nome, "tem", idade, "anos de idade.");
@@ -126,7 +126,7 @@ Saída na tela:
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```java
+  ```c
   String nome = "Dunga";
   int idade = 35;
   System.out.printf("%s tem %d anos de idade.\n", nome, idade)
