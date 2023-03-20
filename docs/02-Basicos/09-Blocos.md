@@ -31,7 +31,7 @@ O exemplo apresentado abaixo apresenta apenas a estrutura para definição de c�
   fim.
   ```
 
-  Em portugol, os blocos são delimitados pelos operadores `início` e `fim`.
+  Em portugol, os blocos são delimitados por `início` e `fim`.
 
   Adaptado de ([Forbellone 2022, p. 43](https://plataforma.bvirtual.com.br/Leitor/Publicacao/323/pdf/))
 
@@ -189,13 +189,19 @@ Utilizando a representação de algoritmos utilizando fluxogramas, o uso dos blo
 
 ```mermaid
 flowchart TD
-    inicio(Inicio)
+    inicio(inicio)
     subgraph Variáveis a serem utilizadas
-    variaveis["
-      real: base, altura;
-      real: area, perimetro;
-      "]
+      variaveis["
+        real: base, altura;
+        real: area, perimetro;
+        "]
     end
+    subgraph Entrada de dados
+      Entrada["
+        leitura(base);
+        leitura(altura);
+        "]
+      end
     subgraph "Processamento"
       subgraph "Cálculo da área"
         area["
@@ -208,9 +214,15 @@ flowchart TD
         "]
       end
     end
-    fim(Fim)
-    inicio --> variaveis --> area --> perimetro --> fim
-
-    style area color:#66f
-    style perimetro color:#66f
+    subgraph "Saída"
+        escrita["
+        escreva(&quot;Área: &quot;, area);
+        escreva(&quot;perimetro: &quot;, perimetro);
+        "]
+      end
+    fim(fim)
+    inicio --> variaveis --> Entrada --> area --> perimetro --> escrita--> fim
 ```
+
+<!-- style area color:#66f
+style perimetro color:#66f -->
