@@ -113,7 +113,7 @@ graph TD
 1. Pergunte 5 números ao usuário. Mostre esses números em ordem, do menor para o maior.
 
 1. Faça um programa que recebe um número inteiro e informa se esse número é divisível por 10, por 5, por 2 ou se não é divisível por nenhum destes.
-    1. Desenvolva também o fluxograma correspondente.
+    1. Desenvolva também a solução para este problema utilizando fluxograma.
 
 
 1. As maçãs custam R$ 0,30  cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um algotitmo que após receber o número de maçãs compradas, calcula e mostra o valor total da compra.
@@ -123,7 +123,7 @@ graph TD
     - para mulheres: (62.1 * Altura) – 44.
 
 1. Faça um programa em que são solicitados ao ao usuário dois valores (operandos) e um operador, que pode ser `+`, `-`, `*` ou `/`. De acordo com o operador digitado, mostre o resultado da operação.
-    1. Desenvolva também o fluxograma correspondente.
+    1. Desenvolva também a solução para este problema utilizando fluxograma.
 
 1. Ler 3 valores (A, B e C) representando as medidas dos lados de um triângulo e escrever se formam ou não um triângulo.  
     1. Resolva o problema utilizando a estrutura **se** apenas uma vez no algoritmo.  
@@ -206,7 +206,7 @@ graph TD
     - "Devia para a vítima?"
     - "Já trabalhou com a vítima?" 
   O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".  
-    1. Desenvolva também o fluxograma correspondente.
+    1. Desenvolva também a solução para este problema utilizando fluxograma.
 
   (Fonte: [EstruturaDeDecisao - PythonBrasil](https://wiki.python.org.br/EstruturaDeDecisao))
 
