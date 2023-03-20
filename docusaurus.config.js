@@ -107,7 +107,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Material',
                 to: '/docs/intro',
               },
             ],
@@ -119,10 +119,10 @@ const config = {
                 label: 'AED',
                 href: 'https://darlonv.github.io/algoritmos',
               },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
+              {
+                label: 'Redes',
+                href: 'https://darlonv.github.io/redes',
+              },
               // {
               //   label: 'Twitter',
               //   href: 'https://twitter.com/docusaurus',
@@ -130,7 +130,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Mais',
             items: [
               {
                 label: 'Licensing',
