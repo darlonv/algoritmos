@@ -84,28 +84,28 @@ System.out.printf("O sucessor de %d é %d\n", valor, sucessor);
   //Entrada
   System.out.println("Entre com o código do estado: ");
   entrada = new Scanner(System.in);
-  Sigla_estado = entrada.next();
+  sigla_estado = entrada.next();
   entrada.close();
 
   //Processamento e saída
-  if (sigla_estado == "PR"): //<- Verifica se o estado é Paraná
+  if (sigla_estado.equals("PR")) //<- Verifica se o estado é Paraná
   {
     System.out.println("Estado: Paraná - Sigla: PR - Código: 41 - Região: Sul");
   }
   else
   {
-    if (sigla_estado.equals("SC")): //<- Verifica se o estado é Santa Catarina
+    if (sigla_estado.equals("SC")) //<- Verifica se o estado é Santa Catarina
     {
       System.out.println("Estado: Santa Catarina - Sigla: SC - Código: 2 - Região: Sul");
     }
     else
-      if (sigla_estado.equals("RS")): //<- Verifica se o estado é Paraná
+      if (sigla_estado.equals("RS")) //<- Verifica se o estado é Paraná
       {
         System.out.println("Estado: Rio Grande do Sul - Sigla: RS - Código: 43 - Região: Sul");
       }
       else //<- Não restou outra opção
       {
-        System.out.println("Estado ainda não cadastrado no sistema.")
+        System.out.println("Estado ainda não cadastrado no sistema.");
       }
   }
   ```

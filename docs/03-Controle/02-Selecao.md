@@ -215,7 +215,7 @@ Quando o trecho de código é composto de mais de uma linha, precisamos definir 
   x_elev = x*x;
   System.out.printf("%d^2= %d\n", x, x_elev);
 
-  if(<expressão>)
+  if(x>10)
   // highlight-start
   { 
     x_elev = x_elev*x;
