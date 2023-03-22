@@ -334,7 +334,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
 <Tabs groupId="language">
   <TabItem value="portugol" label="Portugol" default>
 
-  ```
+  ```c
   inicio;
   //variaveis
   caractere: nome;
@@ -352,7 +352,7 @@ No exemplo, o nome do usuário será armazenado em uma variável chamada `nome`.
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```java
+  ```c
   import java.util.Scanner;
   //variaveis
   String nome;
