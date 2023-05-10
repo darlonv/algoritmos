@@ -131,6 +131,7 @@ Observe que antes de adentrar na estrutura, é necessário inicializar a variáv
 - Peça ao usuário que digite diversos números inteiro, parando quando o número 0 for digitado. Para cada número digitado, informe se este é par ou ímpar.
 - Desenvolva um algoritmo em que o usuário pode digitar diversos números (quantos ele quiser), parando quando o número 0 for digitado. Ao final, informe quantos números foram digitados.
 - Escreva um algoritmo que solicita um número inteiro positivo ao usuário, e em seguida calcula a soma de todos os números pares de 0 até o número informado.
+- Peça ao usuário que digite dois números, b e p (base e potência). Em seguida, calcule o valor de $b^p$ e apresente o resultado na tela.
 - Peça ao usuário que digite um número inteiro. Em seguida, apresente a tabuada desse número, de 1 a 10.
 - Peça ao usuário que digite 5 números positivos. Em seguida, mostre o menor valor entre os números digitados.
 - Atualize o exercício anterior, informando também o maior valor digitado.
