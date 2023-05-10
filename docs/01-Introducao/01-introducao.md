@@ -27,7 +27,7 @@ O desenvolvimento deste material deu-se tendo como referências bibliográficas 
 
 <!-- 
 <Tabs groupId='language'>
-  <TabItem value="portugol" label="Portugol" default>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
   ```
   escreva("Olá Mundo");

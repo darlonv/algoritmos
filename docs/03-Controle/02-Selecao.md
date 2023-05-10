@@ -9,9 +9,6 @@ import TabItem from '@theme/TabItem';
 
 Uma estrutura de **seleção** possibilita que determinadas ações, ou seja, linhas de um algoritmo, sejam executadas em ou não. A **decisão** se essas linhas serão ou não executadas depende uma **condição** ([FORBELLONE 2022, pg 50](https://plataforma.bvirtual.com.br/Leitor/Publicacao/200078/pdf/75)).
 
-
-
-
 A estrutura de seleção é dada pelo uso da estrutura `se`. Com ela é possível definir *se*  determinado trecho de código seja executado de acordo com determinada **condição**. A **condição** é uma expressão que resulta em `verdadeiro` ou `falso`. Caso o resultado da expressão seja `verdadeiro`, o trecho de código é executado.
 
 ## Simples
