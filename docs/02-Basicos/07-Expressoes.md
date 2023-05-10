@@ -16,7 +16,7 @@ Para associar um valor a uma variável utiliza-se o operador **←** ao lado dir
 **Exemplo**  
 
 <Tabs groupId='language'>
-  <TabItem value="portugol" label="Portugol" default>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
   Um exemplo de expressão é
 
@@ -87,7 +87,7 @@ Como dito anteriormente, a atribuição é o operador que determina a passagem d
 
 
 <Tabs groupId='language'>
-  <TabItem value="portugol" label="Portugol" default>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
   |Operador|Função|
   |--------|------|
@@ -137,7 +137,7 @@ Como dito anteriormente, a atribuição é o operador que determina a passagem d
 São aqueles utilizados para a execução de operações matemáticas, como adição, multiplicação, subtração, divisão, potenciação, etc.
 
 <Tabs groupId='language'>
-  <TabItem value="portugol" label="Portugol" default>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
 |Operador|Função|Exemplo|
 |----|----------| ----------|
@@ -256,7 +256,7 @@ escreva(valor_f);
 São operadores de comparação entre valores. As expressões realizadas com estes operadores retornam um resultado do tipo lógico, `verdadeiro` ou `falso` ([FORBELLONE 2022, p.27](https://plataforma.bvirtual.com.br/Leitor/Publicacao/200078/pdf/51)).
 
 <Tabs groupId='language'>
-  <TabItem value="portugol" label="Portugol" default>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
   ```
   escreva("Olá Mundo");
@@ -280,7 +280,7 @@ São operadores de comparação entre valores. As expressões realizadas com est
 </Tabs>
 
 <Tabs groupId='language'>
-  <TabItem value="portugol" label="Portugol" default>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
 |Operador|Função|
 |---|---| 
@@ -409,7 +409,7 @@ A negação corresponde ao **não** lógico. Consiste na inversão lógica do va
 Em resumo, para os operadores lógicos temos:
 
 <Tabs groupId='language'>
-  <TabItem value="portugol" label="Portugol" default>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
 |Operador|Função|
 |--------|------|
@@ -443,16 +443,16 @@ Em resumo, para os operadores lógicos temos:
 É possível combinar alguns operadores, que realizam a operação utilizando os parâmetros passados ao operador, e em seguida realiza uma atribuição utilizando a variável à esquerda dos operadores.
 
 <Tabs groupId='language'>
-  <TabItem value="portugol" label="Portugol" default>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
 |Operador|Função| 
 |---|---|
 |`++`| incremento de valor 1| 
-|`+=`| adição e atribuição| 
-|`-=`| subtração e atribuição| 
-|`*=`| multiplicação e atribuição| 
-|`/=`| divisão e atribuição| 
-|`%=`| módulo e atribuição|
+|`--`| decremento de valor 1| 
+|`+←`| adição e atribuição| 
+|`-←`| subtração e atribuição| 
+|`*←`| multiplicação e atribuição| 
+|`/←`| divisão e atribuição| 
 
   </TabItem>
   <TabItem value="java" label="Java">
@@ -460,6 +460,7 @@ Em resumo, para os operadores lógicos temos:
 |Operador|Função|
 |---|---|
 |`++`| incremento de valor 1 (unário)| 
+|`--`| decremento de valor 1 (unário)| 
 |`+=`| adição e atribuição| 
 |`-=`| subtração e atribuição| 
 |`*=`| multiplicação e atribuição| 
@@ -488,7 +489,7 @@ As prioridades definem quais operadores serão executados primeiro. Caso possuam
 
 
 <Tabs groupId='language'>
-  <TabItem value="portugol" label="Portugol" default>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
 |Tipo|Símbolo|
 |----|-------|

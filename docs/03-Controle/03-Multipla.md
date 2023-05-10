@@ -32,7 +32,7 @@ Uma abordagem para a solução seria testar cada valor de forma encadeada.
   <summary>Resposta</summary>
 <Tabs groupId='language'>
 
-  <TabItem value="portugol" label="Portugol">
+  <TabItem value="pseudocodigo" label="Pseudocódigo">
 
   ```c
   //Variáveis
@@ -139,6 +139,60 @@ Outra forma seria utilizar uma estrutura em que todos os valores fossem testados
 
 ## Sintaxe
 
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  ```c
+  escolha <variável> //<- variável a ser observada
+    caso X: // caso o valor da variável seja X
+      //código caso X
+    caso Y: // caso o valor da variável seja Y
+      //código caso Y
+    caso Z: // caso o valor da variável seja Z
+      //código caso Z
+    caso contrário: //demais casos
+      //código demais casos 
+  fimescolha;
+  ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  ```js
+  switch(<variável>){ //Variável a ser observada
+    case X: //Caso o valor da variável seja X
+      //Código caso X
+      break;
+    case Y: //Caso o valor da variável seja Y
+      //Código caso Y
+      break;
+    case Z: //Caso o valor da variável seja Z
+      //Código caso Z
+      break;
+    default: //demais casos
+      //Código demais casos
+  }
+  ```
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+
+  Em Python, não há este tipo de estrutura. Porém, pode ser abordada com `elif`, que tem a ideia de `se-senão-se`
+
+  ```python
+  if <variável> == X : #Verifica se a variável possui valor X
+    #Código caso X
+  elif <variável> == Y: #Verifica se a variável possui valor Y
+    #Código caso Y
+  elif <variável> == Z: #Verifica se a variável possui valor Z
+    #Código caso Z
+  else: #demais casos
+    #Código demais casos
+  ```
+
+  </TabItem>
+</Tabs>
+
 **Exemplo**  
 A solução para o exemplo anterior utilizando `escolha` poderia ser da seguinte forma:
 
@@ -146,7 +200,7 @@ A solução para o exemplo anterior utilizando `escolha` poderia ser da seguinte
   <summary>Resposta</summary> -->
 <Tabs groupId='language'>
 
-  <TabItem value="portugol" label="Portugol">
+  <TabItem value="pseudocodigo" label="Pseudocódigo">
 
   ```c
   início
@@ -222,8 +276,6 @@ A solução para o exemplo anterior utilizando `escolha` poderia ser da seguinte
   </TabItem>
   <TabItem value="python" label="Python">
 
-  Em Python, não há este tipo de estrutura. Porém, pode ser abordada com `elif`, que tem a ideia de `se-senão-se`
-
   ```python
   #Variáveis e entrada
   sigla_estado = input("Entre com a sigla do estado: ")
@@ -246,6 +298,29 @@ A solução para o exemplo anterior utilizando `escolha` poderia ser da seguinte
 
 <!-- </details> -->
 
+<details>
+  <summary>Fluxograma</summary>
+
+  ```mermaid
+  %%{ init: { 'flowchart': { 'curve': 'stepAfter' } } }%%
+  graph TD
+      inicio("inicio")
+      fim("fim.")
+      A["caractere: sigla_estado"]
+      B("leia(sigla_estado)")
+      B --> C{"escolha
+      sigla_estado"}
+      C -->|"PR"| D["escreva(Paraná)"]
+      C -->|"SC"| E["escreva(Santa Catarina)"]
+      C -->|"RS"| F["escreva(Rio Grande do Sul)"]
+      A --> B
+      inicio --> A
+      D --> fim
+      E --> fim
+      F --> fim
+  ```
+
+</details>
 
 
 **Atividades**  
@@ -254,13 +329,7 @@ A solução para o exemplo anterior utilizando `escolha` poderia ser da seguinte
 
 
 ## Referências
+- [Forbellone, André Luiz Villar; Eberspätcher, Henri Frederico. Lógica de programação: a construção de algoritmos e estruturas de dados. 4.ed. São Paulo: Pearson Prentice Hall, 2022.](https://plataforma.bvirtual.com.br/Leitor/Publicacao/323/pdf/)
 
-```mermaid
-%%{ init: { 'flowchart': { 'curve': 'stepAfter' } } }%%
-graph TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
-```
+### Materiais externos
+- [IBGE. Códigos dos municípios IBGE.](https://www.ibge.gov.br/explica/codigos-dos-municipios.php)
