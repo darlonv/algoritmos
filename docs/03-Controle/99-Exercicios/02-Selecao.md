@@ -118,14 +118,14 @@ graph TD
 
 1. As maçãs custam R$ 0,30  cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um algotitmo que após receber o número de maçãs compradas, calcula e mostra o valor total da compra.
 
-1. Tendo como entrada a altura e o sexo (codificado da seguinte forma: `f`:feminino e `m`:masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
+1. Construa um algoritmo que calcule e imprima o peso ideal de uma pessoa, utilizando o seguinte cálculo:
     - para homens: (72.7 * Altura) – 58  
     - para mulheres: (62.1 * Altura) – 44.
 
 1. Faça um programa em que são solicitados ao ao usuário dois valores (operandos) e um operador, que pode ser `+`, `-`, `*` ou `/`. De acordo com o operador digitado, mostre o resultado da operação.
     1. Desenvolva também a solução para este problema utilizando fluxograma.
 
-1. Ler 3 valores (A, B e C) representando as medidas dos lados de um triângulo e escrever se formam ou não um triângulo.  
+1. Desenvolva um algoritmo que possui como entrada 3 valores (A, B e C), que represem as medidas dos lados de um triângulo. Informe se pode ou não existir um triângulo com as medidas informadas.  
     1. Resolva o problema utilizando a estrutura **se** apenas uma vez no algoritmo.  
 
   :::note
@@ -144,12 +144,12 @@ graph TD
 
 1. Escreva um programa que recebe um inteiro e diga se esse número é par ou ímpar.  
   :::tip Dica
-    Utilize resto da divisão.
+    Utilize o resto da divisão.
   :::
 
-1. Faça um programa para ler um número e imprimir uma mensagem dizendo se tal número é par e positivo ao mesmo tempo.
+1. Faça um programa para ler um número e imprimir uma mensagem dizendo se esse número é par e positivo ao mesmo tempo.
 
-1. Faça um programa que recebe a idade de um nadador indicar quais em quais categorias esse nadador pode competir. As categorias são:  
+1. Faça um programa que recebe a idade de um nadador. Indique quais em quais categorias esse nadador pode competir, de acordo com a seguinte tabela:  
 
     |Idade      |Categoria|
     |-----------|---------|
@@ -164,9 +164,9 @@ graph TD
 
 1. Um comerciante comprou um produto e quer vendê-lo com lucro de 45% se o valor da compra for menor que R$ 20,00; caso contrário, o lucro será de 30%. Entrar com o valor do produto e imprimir o valor da venda.
 
-1. Para doar sangue é necessário ter entre 18 e 67 anos. Faça um *software* que pergunte a idade de uma pessoa e diga se ela pode doar sangue ou não.
+1. Para que uma pessoa possa doar sangue é necessário ter entre 18 e 67 anos. Faça um algoritmo que pergunte a idade de uma pessoa e informa se ela pode ou não ser doadora de sangue.
 
-1. Faça um programa que receba três notas, e com base nelas informa se o aluno foi aprovado ou reprovado. 
+1. Faça um programa que receba três notas de um aluno, e com base nelas informa se esse aluno foi aprovado ou reprovado.  
     - Média maior ou igual a 7,00: *"ALUNO APROVADO"*
     - Média menor que 7,00: *"ALUNO REPROVADO"*
 
