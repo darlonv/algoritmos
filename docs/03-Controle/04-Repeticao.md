@@ -122,8 +122,20 @@ Poderíamos reescrever o exemplo anterior utilizando esta estrutura.
 
 Observe que a estrutura executada diversas vezes, e a quantidade de vezes a ser executada dependerá do resultado da condição.
 
-**Exercício**  
+:::caution Cuidado
+Observe que antes de adentrar na estrutura, é necessário inicializar a variável, e a variável deve ter seu valor modificado durante a execução do laço de repetição. Caso a variável não se altere, ocorre o risco de gerar um laço que é executado infinitamente, um *loop* infinito.
+:::
+
+**Exercícios**  
 - Desenvolva um algoritmo que realiza uma contagem regressiva para o lançamento de um foguete. Seu programa deve apresentar na tela uma sequência de valores, iniciando de 10 e finalizando em 0.
+- Peça ao usuário que digite diversos números inteiro, parando quando o número 0 for digitado. Para cada número digitado, informe se este é par ou ímpar.
+- Desenvolva um algoritmo em que o usuário pode digitar diversos números (quantos ele quiser), parando quando o número 0 for digitado. Ao final, informe quantos números foram digitados.
+- Escreva um algoritmo que solicita um número inteiro positivo ao usuário, e em seguida calcula a soma de todos os números pares de 0 até o número informado.
+- Peça ao usuário que digite um número inteiro. Em seguida, apresente a tabuada desse número, de 1 a 10.
+- Peça ao usuário que digite 5 números positivos. Em seguida, mostre o menor valor entre os números digitados.
+- Atualize o exercício anterior, informando também o maior valor digitado.
+- Atualize o algoritmo do exercício anterior, informando também a média entre os valores digitados.
+- Atualize o algoritmo do exercício anterior, em que o usuário pode digitar qualquer quantidade de números, parando quando um valor negativo for digitado.
 - Desenvolva um algoritmo que calcula o MDC entre dois números positivos.
 :::info 
 O MDC (Máximo Divisor Comum) é o maior valor que divide simultâneamente dois números.
