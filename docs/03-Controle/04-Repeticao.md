@@ -128,15 +128,10 @@ Observe que antes de adentrar na estrutura, é necessário inicializar a variáv
 
 **Exercícios**  
 - Desenvolva um algoritmo que realiza uma contagem regressiva para o lançamento de um foguete. Seu programa deve apresentar na tela uma sequência de valores, iniciando de 10 e finalizando em 0.
-- Peça ao usuário que digite diversos números inteiro, parando quando o número 0 for digitado. Para cada número digitado, informe se este é par ou ímpar.
-- Desenvolva um algoritmo em que o usuário pode digitar diversos números (quantos ele quiser), parando quando o número 0 for digitado. Ao final, informe quantos números foram digitados.
-- Escreva um algoritmo que solicita um número inteiro positivo ao usuário, e em seguida calcula a soma de todos os números pares de 0 até o número informado.
-- Peça ao usuário que digite dois números, b e p (base e potência). Em seguida, calcule o valor de $b^p$ e apresente o resultado na tela.
+- Peça ao usuário que digite diversos números inteiros, parando quando o número 0 for digitado. Para cada número digitado, informe se este é par ou ímpar.
 - Peça ao usuário que digite um número inteiro. Em seguida, apresente a tabuada desse número, de 1 a 10.
 - Peça ao usuário que digite 5 números positivos. Em seguida, mostre o menor valor entre os números digitados.
 - Atualize o exercício anterior, informando também o maior valor digitado.
-- Atualize o algoritmo do exercício anterior, informando também a média entre os valores digitados.
-- Atualize o algoritmo do exercício anterior, em que o usuário pode digitar qualquer quantidade de números, parando quando um valor negativo for digitado.
 - Desenvolva um algoritmo que calcula o MDC entre dois números positivos.
 :::info 
 O MDC (Máximo Divisor Comum) é o maior valor que divide simultâneamente dois números.
@@ -151,13 +146,105 @@ O MMC (Mínimo múltiplo Comum) é o menor valor que é múltiplo de ambos os n�
 
 ### Contadores
 
+- Desenvolva um algoritmo em que o usuário pode digitar diversos números (quantos ele quiser), parando quando o número 0 for digitado. Ao final, informe quantos números foram digitados.
+- Desenvolva um algoritmo em que o usuário insere uma senha para ingresssar no sistema. A senha correta é `QPwoei`. Caso o usuário digite a senha incorretamente, mostre a mensagem "Senha incorreta. Tente novamente". Caso a senha senha digitada incorretamente por 3 vezes, mostra a mensagem "Falha ao logar no sistema".
+
 ### Acumuladores
+
+- Escreva um algoritmo que solicita um número inteiro positivo ao usuário, e em seguida calcula a soma de todos os números pares de 0 até o número informado.
+- Peça ao usuário que digite dois números, b e p (base e potência). Em seguida, calcule o valor de $b^p$ e apresente o resultado na tela.
+
+- Peça ao usuário que digite diversos números inteiros, parando quando um valor negativo for digitado. Mostre a média entre todos os valores digitados.
+
+- Desenvolva um algorimo solicite ao usuário um número e exiba a sequência de Fibonacci até o valor fornecido.
+:::info
+A sequência de Fibonacci é uma sequência de números em que a cada número da sequência é a soma dos dois números anteriores na sequência. Os primeiros números na sequência são 0 e 1. Os primeiros números da sequência são 0, 1, 1, 2, 3, 5, 8, 13, 21, 33, ...
+::: 
+
 
 ## repita
 
+Podemos utilizar uma outra estrutura, em que a condição é testada ao final. Nesta estrutura, o conteúdo da repetição sempre é executado pelo menos uma vez. A estrutura é repetida enquanto a condição for falsa.
+
+A estrutura sintática do comando `repita` é a seguinte:
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  ```c
+  repita
+    ...
+    ...código...
+    ...
+  até <condição>;
+  ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  ```js
+  do{
+    ...
+    ...código...
+    ...
+  }while(<condição>);
+  ```
+
+  </TabItem>
+</Tabs>
+
+**Exercícios**  
+- Escreva um programa que solicite ao usuário digitar um número maior que 10. O programa deve continuar solicitando o número até que o usuário insira um número válido.
+- Desenvolva um algoritmo que peça ao usuário solicite ao usuário adivinhar um número secreto entre 1 e 100. O programa deve continuar solicitando palpites até que o usuário acerte o número secreto. Como dica, o programa deve informar se o valor digitado foi alto ou baixo.
+- Elabore um algoritmo que realiza o levantamento de roupas em uma loja. As roupas podem ser calças (J), camisetas (T) ou camisas (C). O usuário deve entrar com J, T ou C simulando a leitura das peças. Ao final, o algoritmo deve mostrar a quantidade e porcentagem de calças, camisetas e camisas que foram registradas. Para finalizar a contagem, o usuário deve digitar a letra F.
 
 ## para
 
+A estrutura `para` consiste em uma estrutura de repetição em que há uma **variável de controle**. Esta variável assume valores predeterminados. Ao utilizar a estrutura `para`, de antemão já é sabido a o número de iterações que serão executadas.
+
+A sintaxe da estrutura `para` segue a seguinte forma:
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  ```c
+  para val de vi até vf passo p faça
+  ...
+  ...
+  ...
+  fimpara;
+  
+  ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  ```js
+  int val;
+  for(val=vi; <condição> ; <incremento>){
+    ...
+    ...código...
+    ...
+  }
+  ```
+
+  onde:
+  - val: variável de controle;
+  - vi: valor inicial;
+  - condição: condição a ser testada no início de cada iteração;
+  - incremento: código a ser executado ao final de cada iteração.  
+  
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+
+  ```python
+  for val in range(vi, vf):
+    ...
+    ...código...
+    ...
+  ```
+
+  </TabItem>
+</Tabs>
 
 
 
