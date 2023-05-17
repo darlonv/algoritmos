@@ -84,12 +84,12 @@ Qual a cor do vestido de cada senhora?
   
 [Forbellone, 2006, pg 12](https://plataforma.bvirtual.com.br/Leitor/Publicacao/323/pdf/)
 
-**Exercício**
+**Exercícios**
 
 - Desenvolva um algoritmo para fazer café.
-
-**Exercício**
+- Desenvolva um algoritmo para fazer um omelete.
 - Desenvolva um algoritmo para trocar o pneu de um carro.
+
 
 **Referências**
 - [Forbellone, André Luiz Villar; Eberspätcher, Henri Frederico. Lógica de programação: a construção de algoritmos e estruturas de dados. 4.ed. São Paulo: Pearson Prentice Hall, 2022.](https://plataforma.bvirtual.com.br/Leitor/Publicacao/323/pdf/)
