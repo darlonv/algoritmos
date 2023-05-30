@@ -132,12 +132,12 @@ Observe que antes de adentrar na estrutura, é necessário inicializar a variáv
 - Peça ao usuário que digite um número inteiro. Em seguida, apresente a tabuada desse número, de 1 a 10.
 - Peça ao usuário que digite 5 números positivos. Em seguida, mostre o menor valor entre os números digitados.
 - Atualize o exercício anterior, informando também o maior valor digitado.
-- Desenvolva um algoritmo que calcula o MDC entre dois números positivos.
+- Desenvolva um algoritmo que calcula o MDC entre dois números inteiros positivos.
 :::info 
 O MDC (Máximo Divisor Comum) é o maior valor que divide simultâneamente dois números.
 :::
 
-- Desenvolva um algoritmo que calcula e mostra o MMC entre dois números positivos.
+- Desenvolva um algoritmo que calcula e mostra o MMC entre dois números inteiros positivos.
 :::info
 O MMC (Mínimo múltiplo Comum) é o menor valor que é múltiplo de ambos os números.
 :::
