@@ -158,7 +158,7 @@ O MMC (Mínimo múltiplo Comum) é o menor valor que é múltiplo de ambos os n�
 
 - Desenvolva um algorimo solicite ao usuário um número e exiba a sequência de Fibonacci até o valor fornecido.
 :::info
-A sequência de Fibonacci é uma sequência de números em que a cada número da sequência é a soma dos dois números anteriores na sequência. Os primeiros números na sequência são 0 e 1. Os primeiros números da sequência são 0, 1, 1, 2, 3, 5, 8, 13, 21, 33, ...
+A sequência de Fibonacci é uma sequência de números em que a cada número da sequência é a soma dos dois números anteriores na sequência. Os primeiros números na sequência são 1 e 1. Os primeiros números da sequência são 1, 1, 2, 3, 5, 8, 13, 21, 33, ...
 ::: 
 
 
