@@ -134,7 +134,7 @@ Observe que antes de adentrar na estrutura, é necessário inicializar a variáv
 - Atualize o exercício anterior, informando também o maior valor digitado.
 - Desenvolva um algoritmo que calcula o MDC entre dois números inteiros positivos.
 :::info 
-O MDC (Máximo Divisor Comum) é o maior valor que divide simultâneamente dois números.
+O MDC (Máximo Divisor Comum) é o maior valor que divide simultaneamente dois números.
 :::
 
 - Desenvolva um algoritmo que calcula e mostra o MMC entre dois números inteiros positivos.
