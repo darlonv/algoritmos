@@ -132,12 +132,12 @@ Observe que antes de adentrar na estrutura, é necessário inicializar a variáv
 - Peça ao usuário que digite um número inteiro. Em seguida, apresente a tabuada desse número, de 1 a 10.
 - Peça ao usuário que digite 5 números positivos. Em seguida, mostre o menor valor entre os números digitados.
 - Atualize o exercício anterior, informando também o maior valor digitado.
-- Desenvolva um algoritmo que calcula o MDC entre dois números positivos.
+- Desenvolva um algoritmo que calcula o MDC entre dois números inteiros positivos.
 :::info 
-O MDC (Máximo Divisor Comum) é o maior valor que divide simultâneamente dois números.
+O MDC (Máximo Divisor Comum) é o maior valor que divide simultaneamente dois números.
 :::
 
-- Desenvolva um algoritmo que calcula e mostra o MMC entre dois números positivos.
+- Desenvolva um algoritmo que calcula e mostra o MMC entre dois números inteiros positivos.
 :::info
 O MMC (Mínimo múltiplo Comum) é o menor valor que é múltiplo de ambos os números.
 :::
@@ -158,7 +158,7 @@ O MMC (Mínimo múltiplo Comum) é o menor valor que é múltiplo de ambos os n�
 
 - Desenvolva um algorimo solicite ao usuário um número e exiba a sequência de Fibonacci até o valor fornecido.
 :::info
-A sequência de Fibonacci é uma sequência de números em que a cada número da sequência é a soma dos dois números anteriores na sequência. Os primeiros números na sequência são 0 e 1. Os primeiros números da sequência são 0, 1, 1, 2, 3, 5, 8, 13, 21, 33, ...
+A sequência de Fibonacci é uma sequência de números em que a cada número da sequência é a soma dos dois números anteriores na sequência. Os primeiros números na sequência são 1 e 1. Os primeiros números da sequência são 1, 1, 2, 3, 5, 8, 13, 21, 33, ...
 ::: 
 
 
