@@ -363,9 +363,6 @@ Java é uma linguagem de programação **orientada a objetos**. Aqui desenvolvem
 
 Observe que nas funções existe o **retorno** do valor calculado. Essa é uma das principais características das funções.
 
-**Exercício**
-
-Desenvolva um algoritmo que possui uma função chamada `tipo_triangulo`, que retorna
 
 **Exercício**  
 
