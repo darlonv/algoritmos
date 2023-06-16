@@ -4,6 +4,3 @@ Uma das grandes dificuldades presentes no desenvolvimento de algoritmos é como 
 
 A decomposição de códigos implica na construção de módulos, que podem ser chamados durante a execução do algoritmo.
 
-**Exemplo**  
-Considere o desenvolvimento de algoritmo que recebe notas de 
-
