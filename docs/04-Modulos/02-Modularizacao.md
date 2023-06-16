@@ -366,9 +366,8 @@ Observe que nas funções existe o **retorno** do valor calculado. Essa é uma d
 
 **Exercício**  
 
-Considere um algoritmo que pergunta a altura e o peso de uma pessoa, e a partir disso calcula seu índice de massa corporal (IMC), de acordo com a seguinte fórmula:
+Considere um algoritmo que pergunta a altura e o peso de uma pessoa, e a partir disso calcula e retorna seu índice de massa corporal (IMC), de acordo com a seguinte fórmula:
 $$
 imc = \frac{peso}{altura^2}
 $$
 
-Uma possível solução seria:
