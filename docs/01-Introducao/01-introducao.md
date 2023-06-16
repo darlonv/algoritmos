@@ -29,14 +29,14 @@ O desenvolvimento deste material deu-se tendo como referências bibliográficas 
 <Tabs groupId='language'>
   <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
-  ```
+  ```c
   escreva("Olá Mundo");
   ```
 
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```js
+  ```javascript
   System.out.println("Olá Mundo");
   ```
 
@@ -72,7 +72,7 @@ O desenvolvimento deste material deu-se tendo como referências bibliográficas 
   
   <TabItem value="java" label="Java">
 
-  ```java
+  ```javascript
 //Variáveis
 int valor;
 int antecessor, sucessor;
