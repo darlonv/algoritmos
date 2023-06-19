@@ -3,7 +3,9 @@
 
 1. Desenvolva um procedimento chamado `tabuada`, que recebe um número `x`, e apresenta a tabuada desse número na tela, com seus múltiplos de 1 a 10.  
 
-**Exemplo**  
+<details>
+  <summary>Exemplos</summary>
+
 - Chamada:
 ```c
 tabuada(5)
@@ -22,9 +24,13 @@ tabuada(5)
 5x10 = 50
 ```
 
+</details>
+
 2. Desenvola um procedimento chamado `tabuadaIntervalo`, que recebe três valores: `x`, `inicio` e `fim`, e apresenta os múltiplos de `x` no intervalo `[inicio, fim]`  
 
-**Exemplo**  
+<details>
+  <summary>Exemplos</summary>
+
 - Chamada:
 ```c
 tabuadaIntervalo(10,15,23)
@@ -42,9 +48,13 @@ tabuadaIntervalo(10,15,23)
 10x23 = 230
 ```
 
+</details>
+
 3. Desenvolva um procedimento chamado `mostraDivisores`, que calcula e mostra todos os divisores de um número.   
 
-**Exemplos**
+<details>
+  <summary>Exemplos</summary>
+
 - Chamada:
 ```c
 mostraDivisores(15)
@@ -79,3 +89,5 @@ mostraDivisores(97)
 97
 ```
 ----------
+
+</details>
