@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Lógica de programação
 
 O quê é a lógica?

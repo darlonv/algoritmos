@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # Constantes e Variáveis
 
 No desenvolvimento de algoritmos, há a necessidade de identificar uma característica nos dados. Em específico, se tais dados são **constantes** ou **variáveis** no decorrer da execução do algoritmo.

@@ -1,7 +1,3 @@
----
-sidebar_position: 8
----
-
 # Representação de algoritmos
 
 Os algoritmos podem ser representados de duas maneiras principais:

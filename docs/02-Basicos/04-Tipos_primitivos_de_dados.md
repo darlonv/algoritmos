@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Tipos primitivos de dados
 
 Os dados compreendem a matéria-prima básica a execução dos sistemas computacionais. Com eles podemos processá-los, transformálos, armazená-los e apresentá-los, ou seja, as tarefas que um computador é capaz de realizar.

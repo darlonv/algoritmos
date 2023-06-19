@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Linguagem de programação
 
 Uma **linguagem de programação** é um conjunto de funções específicas e bem definidas, com as quais é possível desenvolver um **algoritmo**.
