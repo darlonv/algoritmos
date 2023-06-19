@@ -21,6 +21,8 @@ import TabItem from '@theme/TabItem';
 
   :::note Definição
 
+  **Números ordinais**  
+
     Os números ordinais são aqueles que apresentam a ordem entre valores.  
     Exemplos: primeiro, segundo, oitavo, nono, décimo terceiro, trigésimo quarto, centésimo vigésimo oitavo.  
     Mais informações: [Figuras de Linguagem. Números ordinais.](https://www.figuradelinguagem.com/gramatica/numeros-ordinais/)  

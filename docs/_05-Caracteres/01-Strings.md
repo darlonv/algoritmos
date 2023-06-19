@@ -1,0 +1,2 @@
+# Cadeias de caracteres
+
