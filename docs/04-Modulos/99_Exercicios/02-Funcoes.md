@@ -196,16 +196,18 @@ Retorna 27.5, pois 22º Réaumur equivale a 27.5º Celsius.
 <details>
   <summary>Exemplos</summary>
 
-- Chamada:
+- Chamada:  
 
 ```c
 distanciaCartesiana(0,0,0,1)
 ```
 
 - Retorno:
+
 ```
 1.0
 ```
+
 Retorna $1.0$, pois a distância do ponto $(0,0)$ a $(0,1)$ é $1$.
 
 ----------
@@ -244,14 +246,19 @@ Retorna $5.0$, pois a distância do ponto $(3,0)$ a $(6,4)$ é $5$.
 
 <details>
   <summary>Exemplos</summary>
+
 - Chamada:
+
 ```c
 trianguloPerimetroTriangulo,(0,0,1,1,1,0)
 ```
+
 - Retorno:
+
 ```
 3.414213562373095
 ```
+
 Retorna $3.414213562373095$, pois é o perímetro do triângulo formado pelos pontos $(0,0)$, $(1,1)$ e $(1,0)$.
 
 ----------
