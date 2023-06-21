@@ -261,7 +261,7 @@ Retorna $5.0$, pois a distância do ponto $(3,0)$ a $(6,4)$ é $5$.
 - Chamada:
 
 ```c
-trianguloPerimetro,(0,0,1,1,1,0)
+trianguloPerimetro(0,0,1,1,1,0)
 ```
 
 - Retorno:
