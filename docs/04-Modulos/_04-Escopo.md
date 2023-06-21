@@ -1,1 +1,0 @@
-# Escopo de variáveis
