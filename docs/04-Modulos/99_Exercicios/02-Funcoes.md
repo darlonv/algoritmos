@@ -193,19 +193,32 @@ Retorna 27.5, pois 22º Réaumur equivale a 27.5º Celsius.
 
 15. Implemente uma função chamada `distanciaCartesiana` que recebe dois pares de números, que correspondem a pontos em um plano cartesiano com coordenadas $x,y$. A função deve retornar a distância entre esses dois pontos. Não é necessário arredondar valores.
 
+:::note Definição
+**Distância cartesiana**
+
+A distância $d$ entre os pontos $(x_0, y_0)$ a $(x_1,y_1)$ no plano cartesiano é calculada utilizando a seguinte equação:
+
+$$
+d = \sqrt{(x_1-x_0)^2 + (y_1-y_0)^2}
+$$
+
+:::
+
 <details>
   <summary>Exemplos</summary>
 
-- Chamada:
+- Chamada:  
 
 ```c
 distanciaCartesiana(0,0,0,1)
 ```
 
 - Retorno:
+
 ```
 1.0
 ```
+
 Retorna $1.0$, pois a distância do ponto $(0,0)$ a $(0,1)$ é $1$.
 
 ----------
@@ -244,14 +257,19 @@ Retorna $5.0$, pois a distância do ponto $(3,0)$ a $(6,4)$ é $5$.
 
 <details>
   <summary>Exemplos</summary>
+
 - Chamada:
+
 ```c
-trianguloPerimetroTriangulo,(0,0,1,1,1,0)
+trianguloPerimetro(0,0,1,1,1,0)
 ```
+
 - Retorno:
+
 ```
 3.414213562373095
 ```
+
 Retorna $3.414213562373095$, pois é o perímetro do triângulo formado pelos pontos $(0,0)$, $(1,1)$ e $(1,0)$.
 
 ----------
