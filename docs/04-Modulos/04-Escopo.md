@@ -239,7 +239,7 @@ Em escopos diferentes, variáveis locais podem utilizar os mesmos nomes. Como es
 
 ## Variáveis globais
 
-Aa variáveis **globais** são aquelas que podem ser acessadas por todos, e portanto, são **compartilhadas** entre todas os módulos.
+Aa variáveis **globais** são aquelas que podem ser acessadas por todos, e portanto, são **compartilhadas** entre todos os módulos.
 
 Para definir uma variável como global, basta declará-la fora do módulo.
 
