@@ -92,3 +92,4 @@ mdc(x,y) = mdc(y,x)
 mdc(x,x) = x
 ```
 
+12. Desenvolva uma função que retorna verdadeiro se determinado valor $x$ é um número primo, e falso caso contrário.
