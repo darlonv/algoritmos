@@ -1,3 +1,4 @@
 # Vetores
 
 
+@todo: string split
