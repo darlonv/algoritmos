@@ -229,7 +229,6 @@ Alguns exemplos dessas operações são:
   |minúsculas|`.toLowerCase()`|`String`|
   |Concatenação|`.concat(<str>)`|`String`|
   |Concatenação|`<str> + <str>`|`String`|
-  |||||
 
   **Exemplo**
   ```javascript
