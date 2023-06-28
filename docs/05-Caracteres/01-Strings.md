@@ -283,7 +283,7 @@ Alguns exemplos dessas operações são:
 
   |Operação|Código|Tipo do retorno|
   |--------|------|---------------|
-  |Comparação|`<st> == <st2>`|`boolean`|
+  |Comparação|`<str> == <st2>`|`boolean`|
   |Tamanho|`len(<str>)`|`int`|
   |Caractere na posição|`str[<pos>]`|`str`|
   |Sub-cadeia|`<str>[<ini>:<fim-1>]`|`str`|
