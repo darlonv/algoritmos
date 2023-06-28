@@ -248,14 +248,12 @@ Alguns exemplos dessas operações são:
         System.out.println(st1.concat(st2));     // "AlgoritmosEstruturas de dados"
         System.out.println(st1.concat(" e ").concat(st2));// "Algoritmos e Estruturas de dados"
         System.out.println(st1 + " e " + st2);   // "Algoritmos e Estruturas de dados"
+        st3 = st1 + " e " + st2; // st3 = "Algoritmos e Estruturas de dados"
+        System.out.println(st3); // "Algoritmos e Estruturas de dados"
 
         for (i = 0; i < st1.length(); i++) {     // Percorre cada caractere
             System.out.println(st1.charAt(i));   // Mostra Cada caractere de "Algoritmos"
         }
-
-        st3 = st1 + " e " + st2; // st3 = "Algoritmos e Estruturas de dados"
-        System.out.println(st3); // "Algoritmos e Estruturas de dados"
-
     }
   ```
 
@@ -272,7 +270,6 @@ Alguns exemplos dessas operações são:
         System.out.println("Algoritmos".toUpperCase());
         System.out.println("Algoritmos".toUpperCase());
         System.out.println("Algoritmos".concat(" e Estruturas de Dados"));
-
     }
   ```
 
@@ -307,6 +304,8 @@ Alguns exemplos dessas operações são:
         print(st1.join(st2)); # "AlgoritmosEstruturas de dados"
         print(st1.join(" e ").join(st2));# "Algoritmos e Estruturas de dados"
         print(st1 + " e " + st2); # "Algoritmos e Estruturas de dados"
+        st3 = st1 + " e " + st2; # st3 = "Algoritmos e Estruturas de dados"
+        print(st3)               # "Algoritmos e Estruturas de dados"
 
         for i in range(len(s1)): # i percorre todas as posições
             print(st1[i])       # Mostra o caractere na posição i
@@ -314,8 +313,7 @@ Alguns exemplos dessas operações são:
         for c in st1: # Percorre cada caractere
             print(c)  # Mostra Cada caractere
 
-        st3 = st1 + " e " + st2; # st3 = "Algoritmos e Estruturas de dados"
-        print(st3);              # "Algoritmos e Estruturas de dados"
+        
   ```
 
   Estas mesmas operações também podem ser realizadas sobre *strings* explícitas em código.
