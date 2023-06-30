@@ -288,6 +288,7 @@ Alguns exemplos dessas operações são:
   |minúsculas|`<str>.lower()`|`str`|
   |Concatenação|`<str>.join(<str2>)`|`str`|
   |Concatenação|`<str1> + <str2>`|`str`|
+  |Substituição|`<str1> + <str2>`|`str`|
 
   **Exemplo**
   ```python
