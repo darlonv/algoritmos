@@ -117,7 +117,7 @@ alobec e atatab
 
 5. Utilize o texto abaixo para responder aos questionamentos seguintes.
 > '*Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrão de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associação com o reptil do mesmo nome.*'  
-> (Texto adaptado de [Wikipedia - Python](https://pt.wikipedia.org/wiki/Python))
+> (Texto adaptado de [Wikipedia: Python](https://pt.wikipedia.org/wiki/Python))
 
 - Mostre:
     1. o número total de caracteres;
@@ -135,7 +135,7 @@ Código para entrada, atribuindo texto diretamenta à variável:
   <TabItem value="java" label="Java">
 
 ```javascript
-texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrao de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associacao com o reptil do mesmo nome."
+texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrao de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associacao com o reptil do mesmo nome.";
 ```
 
   </TabItem>
@@ -653,3 +653,163 @@ falso
 <!-- |`ovni`|`ovo`|`False`| -->
 
 </details>
+
+
+18. Desenvolva uma função que recebe como entrada uma cadeia de caracteres, que possui diversos caracteres que se repetem em sequência. Sua função deve retornar uma cadeia de caracteres contendo a quantidade de vezes que o caractere se repete e o caractere em si, separados por vírgula.
+
+<details>
+  <summary>Exemplos</summary>
+
+- Entrada:
+
+```
+ABB
+```
+
+- Saída:
+
+```
+1A,2B
+```
+
+--------------------
+
+- Entrada:
+
+```
+HHHH
+```
+
+- Saída:
+
+```
+4H
+```
+
+--------------------
+
+
+- Entrada:
+
+```
+AAABBCCCC
+```
+
+- Saída:
+
+```
+3A,2B,4C
+```
+
+--------------------
+
+- Entrada:
+
+```
+AAAAAGGGCCCTTTCCTTAAAAAATCG
+```
+
+- Saída:
+
+```
+5A,3G,3C,3T,2C,2T,6A,1T,1C,1G
+```
+
+--------------------
+
+- Entrada:
+
+```
+..,,aaaAAAAA--------!!!!!!!!!!!!!!!999999900      .
+```
+
+- Saída:
+
+```
+2.,2,,3a,5A,8-,15!,79,20,6 ,1.
+```
+
+--------------------
+
+</details>
+
+
+19. Desenvolva uma função que recebe como entrada uma cadeia de caracteres que é composta por um número inteiro seguido de um caractere, onde número indica a quantidade de vezes que o caractere deve ser repetido. Este padrão pode ocorrer diversas vezes na entrada, separada por vírgulas.
+
+<details>
+  <summary>Exemplos</summary>
+
+- Entrada:
+
+```
+1A,2B
+```
+
+- Saída:
+
+```
+ABB
+```
+
+--------------------
+
+- Entrada:
+
+```
+4H
+```
+
+- Saída:
+
+```
+HHHH
+```
+
+--------------------
+
+
+- Entrada:
+
+```
+3A,2B,4C
+```
+
+- Saída:
+
+```
+AAABBCCCC
+```
+
+--------------------
+
+- Entrada:
+
+```
+5A,3G,3C,3T,2C,2T,6A,1T,1C,1
+```
+
+- Saída:
+
+```
+AAAAAGGGCCCTTTCCTTAAAAAATCG
+```
+
+--------------------
+
+- Entrada:
+
+```
+2.,2,,3a,5A,8-,15!,79,20,6 ,1.
+```
+
+- Saída:
+
+```
+..,,aaaAAAAA--------!!!!!!!!!!!!!!!999999900      .
+```
+
+--------------------
+
+</details>
+
+<!-- 20. Desenvolva diversas funções que realizam a conversão de valores  -->
