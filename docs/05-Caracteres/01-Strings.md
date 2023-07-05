@@ -116,7 +116,7 @@ A forma como as linguagens de programação organizam os dados em memória é di
   inicio
     //variáveis
     caractere charA = "A", charB = "B";
-    caractere msgA = "Algoritmos", msg = "Algoritmos";
+    caractere msgA = "Algoritmos", msgB = "Algoritmos";
     
     //Comparação entre caracteres
     se(charA = charB)
@@ -152,7 +152,7 @@ A forma como as linguagens de programação organizam os dados em memória é di
   public static void main(String[] args){
     //variáveis
     char   charA = 'A', charB = 'B';
-    String msgA = "Algoritmos", msg = "Algoritmos";
+    String msgA = "Algoritmos", msgB = "Algoritmos";
     
     //Comparação entre caracteres
     if(charA == charB){
@@ -184,7 +184,7 @@ A forma como as linguagens de programação organizam os dados em memória é di
   inicio
     #variáveis
     charA = "A", charB = "B"
-    msgA = "Algoritmos", msg = "Algoritmos"
+    msgA = "Algoritmos", msgB = "Algoritmos"
     
     #Comparação entre caracteres
     if charA == charB:
