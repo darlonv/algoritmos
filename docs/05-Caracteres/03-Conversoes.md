@@ -14,29 +14,17 @@ import TabItem from '@theme/TabItem';
   |caractere|inteiro|`inteiro(<caractere>)`|
   |real|caractere|`real(<caractere>)`|
   |caractere|real||`caractere(<real>)`|
-  ||||
-
-  ```c
-  escreva("Olá Mundo");
-  ```
 
   </TabItem>
   <TabItem value="java" label="Java">
 
   |De|Para|Código| 
-  |--|----|--------|
+  |--|----|------|
   |int|String|`Integer.toString(<int>)`, `String.valueOf(<int>)`|
   |String|int|`Integer.parseInt(<String>)`|
   |float|String|`Float.toString(<int>)`, `String.valueOf(<float>)`|
   |String|float|`Float.parseFloat(<String>)`|
 
-  Exemplos  
-
-
-
-  ```javascript
-  System.out.println("Olá Mundo");
-  ```
 
   </TabItem>
   <TabItem value="python" label="Python">
@@ -47,10 +35,6 @@ import TabItem from '@theme/TabItem';
   |str|int|`int(<str>)`|
   |float|str|`str(<float>)`|
   |str|float|`float(<str>)`|
-
-  ```python
-  print("Olá Mundo")
-  ```
 
   </TabItem>
 </Tabs>
