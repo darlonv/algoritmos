@@ -37,7 +37,7 @@ Inicialmente abordaremos a criação de vetores de maneira estática, para compr
   <TabItem value="java" label="Java">
 
   ```javascript
-  <tipo>[] <nome> = new <tipo>[<qtde>];
+  <tipo>[] <nome> = {<valores>};
   ```
 
   **Exemplo** 
@@ -51,82 +51,547 @@ Inicialmente abordaremos a criação de vetores de maneira estática, para compr
   <TabItem value="python" label="Python">
 
   ```python
-  <nome> = []
+  <nome> = [<valores>]
   ```
 
   **Exemplo** 
   ```python
-  idade = [20, 22, 18, 40, 37, 20, 12, 65, 68, 40]; //armazena informações da idade de 10 pessoas,
-  altura = [1.62, 1.10,  0.23, 1,80, 1,42,1.20, 0.90, 1.40 ];  //armazena a altura de 8 pessoas
-  porta_aberta = [true, false, false, true];   //armazena informações sobre 4 portas
+  idade = [20, 22, 18, 40, 37, 20, 12, 65, 68, 40]; #armazena informações da idade de 10 pessoas,
+  altura = [1.62, 1.10,  0.23, 1,80, 1,42,1.20, 0.90, 1.40 ];  #armazena a altura de 8 pessoas
+  porta_aberta = [true, false, false, true];   #armazena informações sobre 4 portas
   ```
 
-  Obs: Em Python, abordaremos a estrutura de dados *list* para compreendermos o funcionamento dos vetores. Diferentes dos vetores, as *lists* são dinâmicas e permitem manipulação mais complexas que os vetores. Dado isto, aqui daremos foco às suas características estáticas.
+<details>
+<summary>Observação</summary>
+
+Em Python, abordaremos a estrutura de dados `list` para compreendermos o funcionamento dos vetores. Diferentes dos vetores, as `lists` são dinâmicas e permitem manipulação mais complexas que os vetores. Dado isto, aqui daremos foco às suas características estáticas.
+</details>
 
   </TabItem>
 </Tabs>
 
-**Exemplos**  
+
+## Acesso a elementos
+
+Nos vetores, cada valor possui o seu **índice**. O índice é uma informação de acesso ao conteúdo que é armazenado naquela posição. Em nossa analogia com o trem, o índice pode ser entendido como o número do vagão do trem.
+
+Os índices de um vetor são valores de `0` a `n-1`, em que `n` é a quantidade total de elementos no vetor.
+
+<details>
+  <summary>Observação</summary>
+  Neste material, adotamos como sendo `0` o valor inicial do índice dos elementos de um vetor. abordagem é implementada em grande parte das linguagens de programação. Porém há exceções, como Pascal, p.ex. 
+
+  O livro (FORBELLONE, 2022) também apresenta em seu conteúdo vetores com elementos inicializando seu índice com 1.
+</details>
+
+Para acessar os elementos de um vetor, tanto para acessar o valor como para modificá-lo, a sintaxe é 
 
 <Tabs groupId='language'>
   <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
   ```c
-  inteiro [10]: altura;     //armazena informações da altura de 10 pessoas
-  real [8]: area;           //armazena a área de 8 objetos
-  logico [4]: porta_aberta; //armazena informações sobre 4 portas
+  <nome>[<índice>]
+  ```
+
+  **Exemplo**
+
+  ```c
+  escreva(idade[0]); //20
+  escreva(idade[1]); //22
+  escreva(idade[7]); //65
+  escreva(idade[9]); //40
+
+  idade[2] = 14;
+  escreva(idade[2]); //14
+  ```
+
+  Neste caso, o vetor `idade` possui 10 elementos, ou seja, seus índices variam de `0` a `9`. Acessar elementos utilizando como índice posições não existentes, resulta em erro.
+
+  **Exemplo**
+   ```c
+  escreva(idade[10]); //ERRO. O vetor possui 10 elementos, ou seja, seus índices vão de 0 a 9.
+  escreva(idade[20]); //ERRO
+
+  idade[10] = 50; //ERRO
+  idade[30] = 26; //ERRO
   ```
 
   </TabItem>
   <TabItem value="java" label="Java">
 
   ```javascript
-  int altura = new int[10];        //armazena informações da altura de 10 pessoas
-  float area = new float[8];       //armazena a área de 8 objetos
-  bool porta_aberta = new bool[4]; //armazena informações sobre 4 portas
+  <nome>[<índice>]
+  ```
+
+  **Exemplo**
+
+  ```javascript
+  System.out.println(idade[0]); //20
+  System.out.println(idade[1]); //22
+  System.out.println(idade[7]); //65
+  System.out.println(idade[9]); //40
+
+  idade[2] = 14;
+  System.out.println(idade[2]); //14
+  ```
+
+  Neste caso, o vetor `idade` possui 10 elementos, ou seja, seus índices variam de `0` a `9`. Acessar elementos utilizando como índice posições não existentes, resulta em erro.
+
+  **Exemplo**
+   ```c
+  System.out.println(idade[10]); //ERRO. O vetor possui 10 elementos, ou seja, seus índices vão de 0 a 9.
+  System.out.println(idade[20]); //ERRO
+
+  idade[10] = 50; //ERRO
+  idade[30] = 26; //ERRO
   ```
 
   </TabItem>
   <TabItem value="python" label="Python">
 
   ```python
-  altura = [];               #armazena informações da altura de pessoas
-  area = [];                 #armazena a área de objetos
-  porta_aberta = new bool[]; #armazena informações sobre portas
+  print(idade[0]) #20
+  print(idade[1]) #22
+  print(idade[7]) #65
+  print(idade[9]) #40
+
+  idade[2] = 14
+  print(idade[2]) #14
   ```
 
-  Obs: Em Python, abordaremos a estrutura de dados *list* para compreendermos o funcionamento dos vetores. Diferentes dos vetores, as *lists* são dinâmicas e permitem manipulação mais complexas que os vetores. Dado isto, aqui abordaremos apenas suas características estáticas.
+  Neste caso, o vetor `idade` possui 10 elementos, ou seja, seus índices variam de `0` a `9`. Acessar elementos utilizando como índice posições não existentes, resulta em erro.
+
+  **Exemplo**
+   ```python
+  print(idade[10]); #ERRO. O vetor possui 10 elementos, ou seja, seus índices vão de 0 a 9.
+  print(idade[20]); #ERRO
+
+  idade[10] = 50; #ERRO
+  idade[30] = 26; #ERRO
+  ```
 
   </TabItem>
 </Tabs>
 
-**Exemplo**  
-Considere o seguinte problema: desenvolver um algorimo que calcula uma média de 5 valores.
-- Desenvolva um algoritmo em que 
+:::caution Atenção
+Não confundir o **índice** com o **conteúdo** dos elementos do vetor.
+:::
+
+Para ilustrar um exemplo de problema que pode ser resolvido com vetores, tomemos o seguinte exemplo:
+
+**Exemplo**
+- Peça ao usuário que digite 5 notas (valores de 0 a 100), que correspondem às notas obtidas em determinada prova. Em seguida, calcule qual foi a nota média da turma, e mostre na tela apenas as notas que são iguais ou acima da média da turma.
+
+Solução sem o uso de vetores:
 
 <Tabs groupId='language'>
   <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
   ```c
-  escreva("Olá Mundo");
+  inicio
+    //variáveis
+    inteiro nota1, nota2, nota3, nota4, nota5, qtde_notas=5, soma_notas;
+    real: media_turma;
+
+    //entrada
+    escreva("Entre com as 5 notas");
+    leia(nota1);
+    leia(nota2);
+    leia(nota3);
+    leia(nota4);
+    leia(nota5);
+
+    //processamento
+    soma_notas = nota1 + nota2 + nota3 + nota4 + nota5
+    media = soma_notas / qtde_notas;
+
+    //saída
+    escreva("Notas acima da média:")
+    se( nota1 >= media_turma)
+    então
+        escreva(nota1);
+    fimse;
+
+    se( nota2 >= media_turma)
+    então
+        escreva(nota2);
+    fimse;
+
+    se( nota3 >= media_turma)
+    então
+        escreva(nota3);
+    fimse;
+
+    se( nota4 >= media_turma)
+    então
+        escreva(nota4);
+    fimse;
+
+    se( nota5 >= media_turma)
+    então
+        escreva(nota5);
+    fimse;
+  fim.
   ```
 
   </TabItem>
   <TabItem value="java" label="Java">
 
   ```javascript
-  System.out.println("Olá Mundo");
+  public static void main(String[] args){
+    //variáveis
+    int nota1, nota2, nota3, nota4, nota5, qtde_notas=5, soma_notas;
+    float media_turma;
+    Scanner entrada = new Scanner(System.in);
+
+    //entrada
+    System.out.println("Entre com as 5 notas");
+    nota1 = entrada.nextInt();
+    nota2 = entrada.nextInt();
+    nota3 = entrada.nextInt();
+    nota4 = entrada.nextInt();
+    nota5 = entrada.nextInt();
+    entrada.close();
+
+    //processamento
+    soma_notas = nota1 + nota2 + nota3 + nota4 + nota5
+    media = (float) soma_notas / qtde_notas;
+
+    //saída
+    System.out.println("Notas acima da média:")
+    if(nota1 >= media_turma){
+        System.out.println(nota1);
+    }
+    if(nota2 >= media_turma){
+        System.out.println(nota2);
+    }
+    if(nota3 >= media_turma){
+        System.out.println(nota3);
+    }
+    if(nota4 >= media_turma){
+        System.out.println(nota4);
+    }
+    if(nota5 >= media_turma){
+        System.out.println(nota5);
+    }
+  }
   ```
 
   </TabItem>
   <TabItem value="python" label="Python">
 
   ```python
-  print("Olá Mundo")
+    #entrada
+    escreva("Entre com as 5 notas");
+    nota1 = input()
+    nota2 = input()
+    nota3 = input()
+    nota4 = input()
+    nota5 = input()
+
+    #processamento
+    soma_notas = nota1 + nota2 + nota3 + nota4 + nota5
+    media = soma_notas / qtde_notas
+
+    #saída
+    print("Notas acima da média:")
+    if nota1 >= media_turma:
+        print(nota1)
+    if nota2 >= media_turma:
+        print(nota2)
+    if nota3 >= media_turma:
+        print(nota3)
+    if nota4 >= media_turma:
+        print(nota4)
+    if nota5 >= media_turma:
+        print(nota5)
   ```
 
   </TabItem>
 </Tabs>
+
+Apenas substituindo as variáveis por vetor utilizando índices, poderíamos chegar à seguinte solução:
+
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  ```c
+  inicio
+    //variáveis
+    inteiro[]: nota = {0,0,0,0,0}; //Inicializa o vetor, colocando valores padrão
+    inteiro: qtde_notas=5, soma_notas, i;
+    real: media_turma;
+
+    //entrada
+    escreva("Entre com as 5 notas");
+    leia(nota[0]);
+    leia(nota[1]);
+    leia(nota[2]);
+    leia(nota[3]);
+    leia(nota[4]);
+
+    //processamento
+    soma_notas = nota[0] + nota[1] + nota[2] + nota[3] + nota[4];
+    media = soma_notas / qtde_notas;
+
+    //saída
+    escreva("Notas acima da média:")
+    se( nota[0] >= media_turma)
+    então
+        escreva(nota[0]);
+    fimse;
+
+    se( nota[1] >= media_turma)
+    então
+        escreva(nota[1]);
+    fimse;
+
+    se( nota[2] >= media_turma)
+    então
+        escreva(nota[2]);
+    fimse;
+
+    se( nota[3] >= media_turma)
+    então
+        escreva(nota[3]);
+    fimse;
+
+    se( nota[4] >= media_turma)
+    então
+        escreva(nota[4]);
+    fimse;
+  fim.
+  ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  ```javascript
+  public static void main(String[] args){
+    //variáveis
+    int[] nota = {0,0,0,0,0};
+    int qtde_notas=5, soma_notas;
+    float media_turma;
+    Scanner entrada = new Scanner(System.in);
+
+    //entrada
+    System.out.println("Entre com as 5 notas");
+    nota[0] = entrada.nextInt();
+    nota[1] = entrada.nextInt();
+    nota[2] = entrada.nextInt();
+    nota[3] = entrada.nextInt();
+    nota[4] = entrada.nextInt();
+    entrada.close();
+
+    //processamento
+    soma_notas = nota[0] + nota[1] + nota[2] + nota[3] + nota[4]
+    media = (float) soma_notas / qtde_notas;
+
+    //saída
+    System.out.println("Notas acima da média:")
+    if(nota[0] >= media_turma){
+        System.out.println(nota[0]);
+    }
+    if(nota[1] >= media_turma){
+        System.out.println(nota[1]);
+    }
+    if(nota[2] >= media_turma){
+        System.out.println(nota[2]);
+    }
+    if(nota[3] >= media_turma){
+        System.out.println(nota[3]);
+    }
+    if(nota[4] >= media_turma){
+        System.out.println(nota[4]);
+    }
+  }
+  ```
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+
+  ```python
+    #variáveis
+    nota = [0,0,0,0,0]
+    #entrada
+    escreva("Entre com as 5 notas");
+    nota[0] = input()
+    nota[1] = input()
+    nota[2] = input()
+    nota[3] = input()
+    nota[4] = input()
+
+    #processamento
+    soma_notas = nota[0] + nota[1] + nota[2] + nota[3] + nota[4]
+    media = soma_notas / qtde_notas
+
+    #saída
+    print("Notas acima da média:")
+    if nota[0] >= media_turma:
+        print(nota[0])
+    if nota[1] >= media_turma:
+        print(nota[1])
+    if nota[2] >= media_turma:
+        print(nota[2])
+    if nota[3] >= media_turma:
+        print(nota[3])
+    if nota[4] >= media_turma:
+        print(nota[4])
+  ```
+
+  </TabItem>
+</Tabs>
+
+Observe que o vetor funciona normalmente como uma variável. A diferença é que podemos utilizar como se fosse um grupo de variáveis que pode ser acessado por um índice. Na verdade é isso mesmo que acontece. Cada elemento em um vetor opera como uma variável independente.
+
+Podemos resolver o exercício anterior da mesma maneira, porém agora utilizando uma variável auxiliar para percorrer o índice de cada elemento no vetor.
+
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  ```c
+  inicio
+    //variáveis
+    inteiro[]: nota = {0,0,0,0,0}; //Inicializa o vetor, colocando valores padrão
+    inteiro: qtde_notas=5, soma_notas, i;
+    real: media_turma;
+
+    //entrada
+    escreva("Entre com as 5 notas");
+    para i de 0 até qtde_notas-1 passo 1 faça:
+        leia(nota[i]);
+    fimpara;
+
+    //processamento
+    soma_notas = 0;
+    para i de 0 até qtde_notas-1 passo 1 faça:
+        soma_notas += nota[i];
+    fimpara;
+    media = soma_notas / qtde_notas;
+
+    //saída
+    escreva("Notas acima da média:")
+    para i de 0 até qtde_notas-1 passo 1 faça:
+        se( nota[i] >= media_turma)
+        então
+            escreva(nota[i]);
+        fimse;
+    fimpara;
+  fim.
+  ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  ```javascript
+  public static void main(String[] args){
+    //variáveis
+    int[] nota = {0,0,0,0,0};
+    int qtde_notas=5, soma_notas, i;
+    float media_turma;
+    Scanner entrada = new Scanner(System.in);
+
+    //entrada
+    System.out.println("Entre com as 5 notas");
+    for(i=0;i<qtde_notas;i++){
+        nota[i] = entrada.nextInt();
+    }
+    entrada.close();
+
+    //processamento
+    soma_notas = 0;
+    for(i=0;i<qtde_notas;i++){
+        soma_notas += nota[i];
+    }
+    media = (float) soma_notas / qtde_notas;
+
+    //saída
+    System.out.println("Notas acima da média:")
+    for(i=0;i<qtde_notas;i++){
+        if(nota[i] >= media_turma){
+            System.out.println(nota[i]);
+        }
+    }
+  }
+  ```
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+
+  ```python
+    #variáveis
+    nota = [0,0,0,0,0]
+    #entrada
+    escreva("Entre com as 5 notas")
+    for i in range(5):
+        nota[i] = int(input())
+
+    #processamento
+    soma_notas = 0
+    for i in range(5):
+        soma_notas += nota[i]
+    media = soma_notas / qtde_notas
+
+    #saída
+    print("Notas acima da média:")
+    for i in range(5):
+        if nota[i] >= media_turma:
+            print(nota[0])
+  ```
+
+  </TabItem>
+</Tabs>
+
+**Exercícios**
+
+- Desenvolva um algoritmo que contabiliza os pontos da LOTO, realizada por dois apostadores Antônio e Bernardo (A e B). Leia valores de três vetores, em que:
+    - O primeiro vetor corresponde aos números sorteados (gabarito), sendo composto por 5 números;
+    - O segundo vetor corresponde aos números apostados pelo jogador A, com 10 valores;
+    - O segundo vetor corresponde aos números apostados pelo jogador B, tabmém com 10 valores.
+
+<details>
+  <summary>Exemplos</summary>
+
+- Entrada:
+
+```
+
+```
+
+- Saída:
+
+```
+```
+
+--------------------
+
+- Entrada:
+
+```
+```
+
+- Saída:
+
+```
+```
+
+--------------------
+
+
+- Entrada:
+
+```
+```
+
+- Saída:
+
+```
+```
+
+
+--------------------
+
+</details>
 
 ## Alocação dinâmica
 
