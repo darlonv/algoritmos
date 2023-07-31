@@ -544,10 +544,10 @@ Podemos resolver o exercício anterior da mesma maneira, porém agora utilizando
 
 **Exercícios**
 
-- Desenvolva um algoritmo que contabiliza os pontos da LOTO, realizada por dois apostadores Antônio e Bernardo (A e B). Leia valores de três vetores, em que:
-    - O primeiro vetor corresponde aos números sorteados (gabarito), sendo composto por 5 números;
-    - O segundo vetor corresponde aos números apostados pelo jogador A, com 10 valores;
-    - O segundo vetor corresponde aos números apostados pelo jogador B, tabmém com 10 valores.
+- Desenvolva um algoritmo que contabiliza os pontos de  um jogo de apostas, realizada por um apostador. Neste jogo, existem 25 valores, dos quais 10 são sorteados.  Leia valores utilizando dois vetores, em que:
+    - O primeiro vetor corresponde aos números sorteados (10 números);
+    - O segundo vetor corresponde aos números apostados pelo jogador, com 5 valores
+Seu programa deve mostrar quantos pontos o jogador acertou. Cada número acertado corresponde a um ponto.
 
 <details>
   <summary>Exemplos</summary>
@@ -555,12 +555,14 @@ Podemos resolver o exercício anterior da mesma maneira, porém agora utilizando
 - Entrada:
 
 ```
-
+22 6 5 19 8 3 7 12 24 13
+5 25 23 13 24
 ```
 
 - Saída:
 
 ```
+3 pontos
 ```
 
 --------------------
@@ -568,11 +570,14 @@ Podemos resolver o exercício anterior da mesma maneira, porém agora utilizando
 - Entrada:
 
 ```
+4 6 15 9 11 16 13 1 25 19
+2 5 20 21 17
 ```
 
 - Saída:
 
 ```
+0 pontos
 ```
 
 --------------------
@@ -581,11 +586,14 @@ Podemos resolver o exercício anterior da mesma maneira, porém agora utilizando
 - Entrada:
 
 ```
+15 3 25 13 16 12 20 23 17 8
+12 23 8 3 13
 ```
 
 - Saída:
 
 ```
+5 pontos
 ```
 
 
