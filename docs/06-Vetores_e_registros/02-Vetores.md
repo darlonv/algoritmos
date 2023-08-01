@@ -603,7 +603,7 @@ Seu programa deve mostrar quantos pontos o jogador acertou. Cada número acertad
 
 ## Alocação dinâmica
 
-@todo: string split
+
 
 ## Referências
 
