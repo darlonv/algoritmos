@@ -149,10 +149,24 @@ Para acessar os elementos nas matrizes, é necessário informarmos os índices r
   <TabItem value="python" label="Python">
 
   ```python
-  idade = [ [ 1, 2, 3 ], [ 4, 5, 6 ] ]                               #armazena informações de idade de 2 grupos com 4 pessoas cada grupo
-  altura = [ [1.62, 1.10,  0.23, 1,80] , [1,42, ,1.20, 0.90, 1.40]]; #armazena informações da altura de 2 grupos com 4 pessoas cada grupo
-  porta_aberta = [ [True, False], [False, True] ];                   #armazena informações sobre portas em 2 andares
+  # vetor com 2 linhas e 3 colunas
+  idade = [ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
+  print(idade[0][0])
+  print(idade[0][1])
+  print(idade[0][2])
+  print(idade[1][0])
+  print(idade[1][1])
+  print(idade[1][2])
   ```
+  ou então utilizando estruturas de repetição:
+  ```python
+  # vetor com 2 linhas e 3 colunas
+  idade = [ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
+  for i in range(2):
+    for j in range(3):
+      print(idade[i][j])
+  ```
+
 
   </TabItem>
 </Tabs>
