@@ -3,6 +3,8 @@ import TabItem from '@theme/TabItem';
 
 # Cadeias de caracteres
 
+## Exercícios de fixação
+
 Resolva os exercícios abaixo sobre cadeias de caracteres. Organize seu código utilizando procedimentos e funções.
 
 1. Pergunte o nome do usuário, e mostre o nome na vertical.
@@ -813,3 +815,11 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 </details>
 
 <!-- 20. Desenvolva diversas funções que realizam a conversão de valores  -->
+
+<!-- ## Procedimentos e funções
+
+### Testes
+
+## Problemas
+
+## Desafios -->

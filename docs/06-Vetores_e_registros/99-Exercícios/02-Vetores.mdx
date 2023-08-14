@@ -1,6 +1,11 @@
 import Bib from '@site/src/components/Bib';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Vetores
+
+## Exercícios de fixação 
 
 1. Elaborar um programa que leia 8 números inteiros e exiba quantos são maiores que a média desses valores.
 
@@ -8,7 +13,7 @@ import Bib from '@site/src/components/Bib';
 
 1. Elaborar um programa que leia um vetor C de 10 elementos inteiros. Após o término da leitura, trocar todos os valores negativos do vetor C por 0. Após todas as trocas terem sido efetuadas, escrever o novo vetor C.
 
-1. Elaborar um programa que leia 6 número e exiba:
+1. Elaborar um programa que leia 6 números e exiba:
     - o maior número lido;
     - o menor número lido;
     - quantos números são iguais ao primeiro número.
@@ -81,7 +86,40 @@ Se a pessoa digitar 1, seu programa deve fazer a reserva de um assento no setor 
 
 1. Uma empresa deseja fazer um levantamento do seu estoque. Para isto possui para cada tipo de produto, o seu Nome, o valor unitário e a sua quantidade em estoque. A empresa deseja emitir um relatório contendo, o Nome, quantidade, valor, unitário e o saldo ( valor total ) em estoque de cada tipo de produto. Ao final deseja-se saber quantos tipos de produtos existem em estoque e o saldo de todos os produtos.
 
-1. Desenvolva duas funções chamadas `conjunto_uniao` e `conjunto_interseccao`, que possuam como parâmetros de entrada 2 vetores de números inteiros, com 10 posições cada.As funções devem retornar os conjuntos união e intersecção, respectivamente, dos elementos de ambos os vetores das entradas das funções.
+   
+## Procedimentos e funções
+
+Desenvolva os exercícios a seguir utilizando um linguagem de programação, organizando todas as funções e procedimentos em um mesmo arquivo. O nome do arquivo deve ser definido de acordo com a linguagem de programação utilizada.
+
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  Nome do arquivo: `vetores.pc`
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  Nome do arquivo: `vetores.java`
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+
+ Nome do arquivo: `vetores.py`
+
+  </TabItem>
+</Tabs>
+
+### Entrada e saída
+
+### Operações matemáticas
+
+1. Desenvolva uma função chamada `vetorSomaInt`, que recebe como parâmetro de entrada um vetor $V$ de valores inteiros. A função deve retornar a soma dos valores no vetor.
+    - De maneira semelhante desenvolva a função `vetorSomaFloat`, em que $V$ é um vetor com dados do tipo real.
+
+1. Desenvolva uma função chamada `vetorSomaVetoresInt`, que recebe como parâmetros de entrada dois vetores $V$ e $W$ de valores inteiros. A função deve retornar um novo vetor $Z$, resultante da soma dos valores de $V$ em $W$ em cada posição. Observe que aqui $V$, $W$ e $Z$ devem possuir sempre o mesmo tamanho.
+    - De maneira semelhante desenvolva a função `vetorSomaVetoresFloat`, em que os vetores possuem dados do tipo real.
+
+1. Desenvolva duas funções chamadas `vetoresConjuntoUniaoInt` e `vetoresConjuntoInterseccaoInt`, que possuam como parâmetros de entrada 2 vetores de números inteiros. As funções devem retornar um novo vetor de inteiros com os valores dos conjuntos união e intersecção, respectivamente, dos elementos de ambos os vetores das entradas das funções.
 
     :::note Definição
     **Conjunto união**  
@@ -91,8 +129,15 @@ Se a pessoa digitar 1, seu programa deve fazer a reserva de um assento no setor 
     **Conjunto intersecção**  
 
     O conjunto intersecção $\cap$ todos os elementos que simultaneamente pertencem aos conjuntos $A$ e $B$, sem a repetição de elementos.
+    :::
+ 
 
-1. oi
+## Problemas
+
+## Desafios
+
+## Exercícios externos
+
 
 ## Referências
 
