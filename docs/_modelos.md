@@ -29,6 +29,10 @@ import TabItem from '@theme/TabItem';
 
 <details>
   <summary>Exemplos</summary>
+</details>
+
+<details>
+  <summary>Exemplos</summary>
 
 - Entrada:
 
