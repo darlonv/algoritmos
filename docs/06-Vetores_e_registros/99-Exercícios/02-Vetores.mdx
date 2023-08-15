@@ -91,6 +91,12 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
     - Implemente também os procedimentos `vetorPrintFloat` e `vetorPrintString`, que operam com dados dos tipos real e caractere.
     - Implemente também os procedimentos `vetorPrintLnInt`, `vetorPrintLnFloat` e `vetorPrintLnString`, que mostram na tela cada elemento em uma mesma linha.
 
+1. Desenvolva uma função chamada `vetorBooleanParaInt`, que recebe como parâmetro de entrada um vetor com elementos do tipo booleano, e retorna um vetor de inteiros. No vetor, valores falso devem ser convertidos para $0$ e valores verdadeiro para $1$.
+    - Desenvolva também uma função que realiza a operação contrária, transformando inteiros em booleanos. Valores $0$ devem ser convertidos para falso e quaisquer outros valores devem ser convertidos para inteiro.
+
+1. Implemente uma função chamada `vetorValoresIguaisInt`, que recebe como entrada um vetor de inteiros. A função deve retornar verdadeiro caso todos os elementos possuam o mesmo valor, e falso caso contrário.
+    - Implemente também as funções `vetorValoresIguaisFloat`, `vetorValoresIguaisBoolean` e `vetorValoresIguaisString`, que operam com vetores com elementos dos tipos real, booleano e caractere, respectivamente.
+
 ### Operações matemáticas
 
 1. Desenvolva uma função chamada `vetorSomaInt`, que recebe como parâmetro de entrada um vetor $V$ de valores inteiros. A função deve retornar a soma dos valores no vetor.
@@ -98,6 +104,10 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
 
 1. Desenvolva uma função chamada `vetorSomaVetoresInt`, que recebe como parâmetros de entrada dois vetores $V$ e $W$ de valores inteiros. A função deve retornar um novo vetor $Z$, resultante da soma dos valores de $V$ em $W$ em cada posição. Observe que aqui $V$, $W$ e $Z$ devem possuir sempre o mesmo tamanho.
     - De maneira semelhante desenvolva a função `vetorSomaVetoresFloat`, em que os vetores possuem dados do tipo real.
+
+1. Desenvolva uma função que retorna o menor valor em um vetor de inteiros. Chame sua função de `vetorMenorInt`, que recebe como entrada um vetor e retorna o menor valor.
+    - Implemente também a função `vetorMenorFloat`, que opera com elementos do tipo real.
+    - Desenvolva também funções que retornam o maior valor de um vetor. Chame suas funções de `vetorMaiorInt` e `vetorMaiorFloat`.
 
 1. Desenvolva duas funções chamadas `vetoresConjuntoUniaoInt` e `vetoresConjuntoInterseccaoInt`, que possuam como parâmetros de entrada 2 vetores de números inteiros. As funções devem retornar um novo vetor de inteiros com os valores dos conjuntos união e intersecção, respectivamente, dos elementos de ambos os vetores das entradas das funções.
 
@@ -129,12 +139,12 @@ Se a pessoa digitar 1, seu programa deve fazer a reserva de um assento no setor 
     1 5 10 10 5 1
     ```
 
-1. Em uma cidade do interior, sabe-se que, de janeiro a abril de 1976 (121 dias), não ocorreu temperatura inferior a 15oC nem superior a 40oC. As temperatura verificadas em cada dia estão disponíveis em uma unidade de entrada de dados. Fazer um algoritmo que calcule e escreva:
+1. Em uma cidade do interior, sabe-se que, de janeiro a abril de 1976 (121 dias), não ocorreu temperatura inferior a 15ºC nem superior a 40ºC. As temperatura verificadas em cada dia estão disponíveis em uma unidade de entrada de dados. Fazer um algoritmo que calcule e escreva:
 
     - a menor temperatura ocorrida;
     - a maior temperatura ocorrida;
     - a temperatura média
-    - o número de dias nos quais a temperatura foi inferior a média à temperatura média.
+    - o número de dias nos quais a temperatura foi inferior à temperatura média.
 
 1. Um armazém trabalha com 100 mercadorias diferentes identificadas pelos números inteiros de 1 a 100. O dono do armazém anota a quantidade de cada mercadoria vendida durante o mês. Ele tem uma tabela que indica, para cada mercadoria, o preço de venda. Escreva um algoritmo para calcular o faturamento mensal do armazém. A tabela de preços é fornecida seguida pelos números das mercadorias e as quantidades vendidas. Quando uma mercadoria não tiver nenhuma venda, é informado o valor zero no lugar da quantidade.
 
