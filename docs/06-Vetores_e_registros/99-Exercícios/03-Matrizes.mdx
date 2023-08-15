@@ -117,20 +117,32 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
 
 1. Desenvolva a função `matrizConverteIntParaFloat`, que recebe como entrada uma matriz com valores inteiros, e retorna uma matriz com os mesmos valores, porém do tipo real.
 
+1. Desenvolva a função `matrizValoresIguaisLinhaInt`, que recebe como entrada uma matriz com valores inteiros e o índice de uma linha. A função deve retornar verdadeiro caso todos os valores dessa linha sejam iguais, e falso caso contrário.
+    - Implemente também funções considerando outros tipos de dados como `matrizValoresIguaisLinhaFloat`, `matrizValoresIguaisLinhaBool` e `matrizValoresIguaisLinhaString`, para os tipos de dados real, booleano e caractere, respectivamente.
+    - De maneira análoga, implemente uma função que verifica se os valores de determinada coluna são iguais. Desenvolva as funções `matrizValoresIguaisColunaInt`, `matrizValoresIguaisColunaFloat`, `matrizValoresIguaisColunaBool` e `matrizValoresIguaisColunaString`.
+
 ### Operações matemáticas
 
-1. Desenvolva uma função chamada `matrizSomaInt`, que recebe como entrada duas matrizes $A$ e $B$ de ordem $a x b$ com valores do tipo inteiro. A função deve retornar a matriz $C$, que resulta de $C = A + B$.
+1. Desenvolva uma função chamada `matrizSomaInt`, que recebe como entrada duas matrizes $A$ e $B$ de ordem $a \times b$ com valores do tipo inteiro. A função deve retornar a matriz $C$, que resulta de $C = A + B$.
     - Desenvolva também a função `matrizSomaFloat`, que opera de maneira semelhante, porém com valores do tipo real.
 
-:::note Definição
-Soma de matrizes
-:::
+    :::note Definição
+    A soma de matrizes é realizada entre matrizes de mesma ordem, ou seja, devem possuir o mesmo número de linhas e colunas. 
 
-1. Desenvolva uma função chamada `matrizMultEscalarInt` que recebe como parâmetro uma matriz M de inteiros e um valor inteiro X. A função deve retornar a matriz $A$, tal que $A = M * X$.
+    A operação é realizada com a soma dos elementos que pertencem às mesmas posições em ambas as matrizes.
+
+    [UFABC. Matreemática. Algebra Linear: Operações com matrizes](https://lirte.pesquisa.ufabc.edu.br/matreematica/a-matematica-do-cotidiano/ramos/algebra/algebra-linear/operacoes-com-matrizes)
+    :::
+
+1. Desenvolva uma função chamada `matrizMultEscalarInt` que recebe como parâmetro uma matriz M de inteiros e um valor inteiro $x$. A função deve retornar a matriz $A$, tal que $A = M * x$.
     - Desenvolva também a função `matrizMultEscalarFloat`, que utiliza valores do tipo real.
 
     :::note Definição
     **Multiplicação de matriz por escalar**
+
+    A multiplicação de matriz por um escalar (valor) consiste em multiplicar os valores em cada posição da matriz por um mesmo valor.
+
+    [UFABC. Matreemática. Algebra Linear: Operações com matrizes: Multiplicação por número real.](https://lirte.pesquisa.ufabc.edu.br/matreematica/a-matematica-do-cotidiano/ramos/algebra/algebra-linear/operacoes-com-matrizes)
     :::
 
 1. Desenvolva uma função chamada `matrizMultInt` que recebe como parâmetro das matrizes A e B. A função deve retornar a matriz $M$, tal que $M = A x B$. Para que a multiplicação possa ser realizada, ela devem ter sua dimensões compatíveis, ou seja A deve ter ordem $x\times y$ e B $x \times y$. Caso as ordens não sejam compatíveis, uma matriz sem nenhum elemento deve ser retornada.
@@ -138,13 +150,23 @@ Soma de matrizes
 
     :::note Definição
     **Multiplicação de matrizes**
+
+    Para que a operação entre duas matrizes $A$ e $B$ possa ocorrer, é necessário que o número de linhas de $A$ seja igual ao número de colunas de $B$. 
+
+    A multiplicação é realizada pela multiplicação dos elementos da primeira matriz pelos elementos da coluna da segunda matriz, e então somar esses produtos.
+
+    [UFABC. Matreemática. Algebra Linear: Operações com matrizes: Multiplicação.](https://lirte.pesquisa.ufabc.edu.br/matreematica/a-matematica-do-cotidiano/ramos/algebra/algebra-linear/operacoes-com-matrizes)
     :::
 
-1.  Desenvolva uma função chamada `matrizIdentidadeInt`, que recebe como parâmetro a ordem da matriz e retorna a matriz identidade, preenchida com valores do tipo inteiro.
-    - Desenvolva a função `matrizIdentidadeFloat`, que realiza a mesma função, porém a matriz retornada é com valores do tipo real.
+1.  Desenvolva uma função chamada `matrizNovaIdentidadeInt`, que recebe como parâmetro a ordem da matriz e retorna a matriz identidade, preenchida com valores do tipo inteiro.
+    - Desenvolva a função `matrizNovaIdentidadeFloat`, que realiza a mesma função, porém a matriz retornada é com valores do tipo real.
 
     :::note Definição
     **Matriz identidade**
+
+    A matriz idendidade é um tipo especial de matriz quadrada, onde os elementos na diagonal principal possuem os valores $1$, e todos os demais elementos possuem os valores $0$.
+
+    [UFABC. Matreemática. Algebra Linear: Tipos de matrizes.](https://lirte.pesquisa.ufabc.edu.br/matreematica/a-matematica-do-cotidiano/ramos/algebra/algebra-linear/tipos-de-matrizes/)
     :::
 
 1. Desenvolva uma função chamada `matrizTransporInt`, que recebe como entrada uma matriz $A$ de ordem $a \times b$ com valores inteiros. A função deve retornar a matriz transposta $A$, com ordem $b \times a$.
@@ -156,6 +178,10 @@ Soma de matrizes
 
     :::note Definição
     **Permutação de linhas e colunas em matrizes**
+
+    Chama-se de permutação de linhas à troca de todos os valores de determinada linha de uma matriz pelos valores de outra linha, mantendo a posição da coluna.
+
+    De maneira análoga é realizada a permutação de colunas, em que as posições das linhas são preservadas.
     :::
 
 ### Testes
@@ -172,11 +198,9 @@ Soma de matrizes
 
 ## Exercícios externos
 
-
-
-
-
-
 ## Referências
 
 Agradecimento especial ao Prof. Odair Moreira de Souza pela ajuda com alguns exercícios desta lista.
+
+- [UFABC. Matreemática. Algebra Linear: Operações com matrizes.](https://lirte.pesquisa.ufabc.edu.br/matreematica/a-matematica-do-cotidiano/ramos/algebra/algebra-linear/operacoes-com-matrizes)
+
