@@ -177,4 +177,36 @@ Observe que ao utilizar estruturas de repetição aninhadas. Uma estrutura de re
 
 ## Alocação dinâmica
 
+A alocação dinâmica permite que a matriz seja criada durante a execução do algoritmo.
+
+
+<Tabs groupId='language'>
+  
+  <TabItem value="java" label="Java">
+
+  ```javascript
+  <tipo>[][] <nome>;
+  
+  <nome> = new tipo[<número de linhas>][<número de colunas>];
+  ```
+
+  **Exemplo**
+
+  - Matriz com 3 linhas e 4 colunas
+
+
+  ```javascript
+  //declaração
+  int[][] matriz;
+  int n_linhas = 3, n_colunas = 4;
+
+  //alocação
+  matriz = new int[n_linhas][n_colunas];
+  ```
+
+
+  </TabItem>
+  
+</Tabs>
+
 ## n dimensões
