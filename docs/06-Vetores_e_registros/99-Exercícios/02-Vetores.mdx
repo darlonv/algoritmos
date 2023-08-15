@@ -54,37 +54,7 @@ import TabItem from '@theme/TabItem';
 
 1. Use um vetor unidimensional para resolver o seguinte problema. Leia 20 números, todos situados entre 0 e 100, inclusive. À medida que cada número for lido, imprima-o somente se não for duplicata de um número já lido. Experimente o "pior caso", no qual todos os 20 números são diferentes.
 
-1. Uma pequena companhia aérea acabou de comprar um computador para o seu novo sistema automático de reservas. O presidente pediu a você que programasse o novo sistema em C. Você deve escrever um programa para atribuir assentos a cada voo do único avião da companhia (capacidade: 20 assentos). Seu programa deve exibir o seguinte menu de alternativas:
-    - Favor digitar 1 para "vip"
-    - Favor digitar 2 para "normal"
-Se a pessoa digitar 1, seu programa deve fazer a reserva de um assento no setor vip (assentos 1-5). Se a pessoa digitar 2, seu programa deve reservar um assento no setor de normal (assentos 6-20). Seu programa deve então imprimir um cartão de embarque indicando o número do assento do passageiro e se ele se encontra no setor vip ou normal do avião. Use um vetor unidimensional para representar o esquema dos assentos do avião. Inicialize todos os elementos do vetor com 0 para indicar que todos os assentos estão livres. A medida que cada assento for reservado, iguale os elementos correspondentes a 1 para indicar que o assento não está mais disponível. Seu programa nunca deve, obviamente, reservar um assento que já tenha sido ocupado. Quando o setor vip estiver lotado, seu programa deve perguntar se a pessoa aceita um lugar no setor normal (e vice-versa). Em caso positivo, faça a reserva apropriada do assento. Em caso negativo, imprima a mensagem "Próximo voo sai em 3 horas".
 
-1. Elabore um programa e funções que transforme um inteiro positivo em um número romano. Projete o programa de forma que possa executá-lo repetidamente até que o valor zero seja introduzido. Obs.: dica utilizar vetores.
-
-1. Escreva um programa que leia um numero inteiro positivo n e em seguida imprima n linhas do chamado Triangulo de Pascal:
-    ```
-    1
-    1 1
-    1 2 1
-    1 3 3 1
-    1 4 6 4 1
-    1 5 10 10 5 1
-    ```
-
-1. Em uma cidade do interior, sabe-se que, de janeiro a abril de 1976 (121 dias), não ocorreu temperatura inferior a 15oC nem superior a 40oC. As temperatura verificadas em cada dia estão disponíveis em uma unidade de entrada de dados. Fazer um algoritmo que calcule e escreva:
-
-    - a menor temperatura ocorrida;
-    - a maior temperatura ocorrida;
-    - a temperatura média
-    - o número de dias nos quais a temperatura foi inferior a média à temperatura média.
-
-1. Um armazém trabalha com 100 mercadorias diferentes identificadas pelos números inteiros de 1 a 100. O dono do armazém anota a quantidade de cada mercadoria vendida durante o mês. Ele tem uma tabela que indica, para cada mercadoria, o preço de venda. Escreva um algoritmo para calcular o faturamento mensal do armazém. A tabela de preços é fornecida seguida pelos números das mercadorias e as quantidades vendidas. Quando uma mercadoria não tiver nenhuma venda, é informado o valor zero no lugar da quantidade.
-
-1. O Sr. José possui uma tornearia que produz 150 tipos de peças e quer automatizar o controle de estoque através de um programa de computador. Porém, Como o Sr.José está receoso quanto à utilização de tecnologias, ele decidiu fazer a implantação gradativa do sistema. A primeira etapa consiste no cadastramento, ao final do expediente, da produção do dia. Considerando que, pelo menos, uma peça de cada tipo é produzida por dia, faça um programa para que ao final de cada mês (30 dias) escreva o total de cada peça produzida naquele mês, no final do ano imprima um relatório de produção dos 12 meses. 
-
-1. Uma grande empresa com mais de 250 funcionários deseja saber quais são os cinco empregados mais recentes. Portanto, Elaborar um programa e funções para ler um número indeterminado de informações (máximo de 300) contendo o número do empregado e o número de meses de trabalho deste empregado e escrever os três mais recentes. Observações: A última informação contém os dois números iguais a zero. Não existem dois empregados admitidos no mesmo mês.
-
-1. Uma empresa deseja fazer um levantamento do seu estoque. Para isto possui para cada tipo de produto, o seu Nome, o valor unitário e a sua quantidade em estoque. A empresa deseja emitir um relatório contendo, o Nome, quantidade, valor, unitário e o saldo ( valor total ) em estoque de cada tipo de produto. Ao final deseja-se saber quantos tipos de produtos existem em estoque e o saldo de todos os produtos.
 
    
 ## Procedimentos e funções
@@ -111,6 +81,16 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
 
 ### Entrada e saída
 
+1. Desenvolva uma função chamada `vetorNovoInt`, que recebe como parâmetro a quantidade de elementos que deve conter um vetor. A função deve retornar um vetor de inteiros com a quantidade de elementos informada. O vetor retornado deve possuir todos seus elementos preenchidos com o valor $0$.
+    - Implemente também as funções `vetorNovoFloat`, `vetorNovoBool` e `vetorNovoString`, que operam utilizando os tipos de dados real, booleano e caractere. Os vetores das funções devem ter seus elementos preenchidos com $0.0$, falso e "", respectivamente.
+
+1. Desenvolva uma função chamada `vetorLeituraInt`, que recebe como parâmetro um vetor. A função deve solicitar ao usuário para que digite os valores a serem preenchidos no vetor, e em seguida retornar o vetor preenchido.
+    - Implemente também as funções `vetorLeituraFloat` e `vetorLeituraString`, que operam com os tipos de dados real e caractere.
+
+1. Desenvolva um procedimento chamado `vetorPrintInt` que recebe como entrada um vetor com elementos do tipo inteiro e mostra esses valores na tela em uma única linha.
+    - Implemente também os procedimentos `vetorPrintFloat` e `vetorPrintString`, que operam com dados dos tipos real e caractere.
+    - Implemente também os procedimentos `vetorPrintLnInt`, `vetorPrintLnFloat` e `vetorPrintLnString`, que mostram na tela cada elemento em uma mesma linha.
+
 ### Operações matemáticas
 
 1. Desenvolva uma função chamada `vetorSomaInt`, que recebe como parâmetro de entrada um vetor $V$ de valores inteiros. A função deve retornar a soma dos valores no vetor.
@@ -133,6 +113,36 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
  
 
 ## Problemas
+
+1. Uma pequena companhia aérea acabou de comprar um computador para o seu novo sistema automático de reservas. O presidente pediu a você que programasse o novo sistema em C. Você deve escrever um programa para atribuir assentos a cada voo do único avião da companhia (capacidade: 20 assentos). Seu programa deve exibir o seguinte menu de alternativas:
+    - Favor digitar 1 para "vip"
+    - Favor digitar 2 para "normal"
+Se a pessoa digitar 1, seu programa deve fazer a reserva de um assento no setor vip (assentos 1-5). Se a pessoa digitar 2, seu programa deve reservar um assento no setor de normal (assentos 6-20). Seu programa deve então imprimir um cartão de embarque indicando o número do assento do passageiro e se ele se encontra no setor vip ou normal do avião. Use um vetor unidimensional para representar o esquema dos assentos do avião. Inicialize todos os elementos do vetor com 0 para indicar que todos os assentos estão livres. A medida que cada assento for reservado, iguale os elementos correspondentes a 1 para indicar que o assento não está mais disponível. Seu programa nunca deve, obviamente, reservar um assento que já tenha sido ocupado. Quando o setor vip estiver lotado, seu programa deve perguntar se a pessoa aceita um lugar no setor normal (e vice-versa). Em caso positivo, faça a reserva apropriada do assento. Em caso negativo, imprima a mensagem "Próximo voo sai em 3 horas".
+
+1. Escreva um programa que leia um numero inteiro positivo n e em seguida imprima n linhas do chamado Triangulo de Pascal:
+    ```
+    1
+    1 1
+    1 2 1
+    1 3 3 1
+    1 4 6 4 1
+    1 5 10 10 5 1
+    ```
+
+1. Em uma cidade do interior, sabe-se que, de janeiro a abril de 1976 (121 dias), não ocorreu temperatura inferior a 15oC nem superior a 40oC. As temperatura verificadas em cada dia estão disponíveis em uma unidade de entrada de dados. Fazer um algoritmo que calcule e escreva:
+
+    - a menor temperatura ocorrida;
+    - a maior temperatura ocorrida;
+    - a temperatura média
+    - o número de dias nos quais a temperatura foi inferior a média à temperatura média.
+
+1. Um armazém trabalha com 100 mercadorias diferentes identificadas pelos números inteiros de 1 a 100. O dono do armazém anota a quantidade de cada mercadoria vendida durante o mês. Ele tem uma tabela que indica, para cada mercadoria, o preço de venda. Escreva um algoritmo para calcular o faturamento mensal do armazém. A tabela de preços é fornecida seguida pelos números das mercadorias e as quantidades vendidas. Quando uma mercadoria não tiver nenhuma venda, é informado o valor zero no lugar da quantidade.
+
+1. O Sr. José possui uma tornearia que produz 150 tipos de peças e quer automatizar o controle de estoque através de um programa de computador. Porém, Como o Sr.José está receoso quanto à utilização de tecnologias, ele decidiu fazer a implantação gradativa do sistema. A primeira etapa consiste no cadastramento, ao final do expediente, da produção do dia. Considerando que, pelo menos, uma peça de cada tipo é produzida por dia, faça um programa para que ao final de cada mês (30 dias) escreva o total de cada peça produzida naquele mês, no final do ano imprima um relatório de produção dos 12 meses. 
+
+1. Uma grande empresa com mais de 250 funcionários deseja saber quais são os cinco empregados mais recentes. Portanto, Elaborar um programa e funções para ler um número indeterminado de informações (máximo de 300) contendo o número do empregado e o número de meses de trabalho deste empregado e escrever os três mais recentes. Observações: A última informação contém os dois números iguais a zero. Não existem dois empregados admitidos no mesmo mês.
+
+1. Uma empresa deseja fazer um levantamento do seu estoque. Para isto possui para cada tipo de produto, o seu Nome, o valor unitário e a sua quantidade em estoque. A empresa deseja emitir um relatório contendo, o Nome, quantidade, valor, unitário e o saldo ( valor total ) em estoque de cada tipo de produto. Ao final deseja-se saber quantos tipos de produtos existem em estoque e o saldo de todos os produtos.
 
 ## Desafios
 
