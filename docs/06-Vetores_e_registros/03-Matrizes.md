@@ -16,7 +16,7 @@ Diferente dos vetores, que são variáveis compostas unidimensionais, ou seja, p
 
 
 **Exemplo**
-- Índices - índices em variável composta **bidimensional** (**matriz**) de 4 linhas e 4 colunas:
+- índices em variável composta **bidimensional** (**matriz**) de 4 linhas e 4 colunas:
 
 ![Matrizes](imagens/matrizes.drawio.svg)
 
