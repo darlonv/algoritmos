@@ -14,10 +14,10 @@ Considere como exemplo a seguinte situação: é necessário armazenar informaç
 
   ```c
   inicio;
-  //variáveis
-  caractere: descricao;
-  inteiro: lote;
-  real: peso;
+    //variáveis
+    caractere: descricao;
+    inteiro: lote;
+    real: peso;
   fim.
   ```
 
@@ -47,3 +47,130 @@ Considere como exemplo a seguinte situação: é necessário armazenar informaç
 
 
 Assim como nos vetores e matrizes, cada elemento pode acessado de maneira individual. 
+
+Imagine agora que surgiu a necessidade de armazenar a informação de mais dois produtos, ou seja, temos prod_1, prod_2 e prod_3. Será então necessário armazenar as informações de descrição, lote e peso para cada produto. Uma possível implementação seria:
+
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  ```c
+  inicio;
+    //variáveis
+    caractere: prod_1_descricao, prod_2_descricao, prod_3_descricao;
+    inteiro: prod_1_lote, prod_2_lote, prod_3_lote;
+    real: prod_1_peso, prod_2_peso, prod_3_peso;
+  fim.
+  ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  ```javascript
+  public static void main(String[] args){
+    //variáveis
+    String prod_1_descricao, prod_2_descricao, prod_3_descricao;
+    int prod_1_lote, prod_2_lote, prod_3_lote;
+    float prod_1_peso, prod_2_peso, prod_3_peso;
+  }
+  ```
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+
+  ```python
+  prod_1_descricao = 0, prod_2_descricao = 0, prod_3_descricao = 0
+  prod_1_lotev, prod_2_lotev, prod_3_lote = 0
+  prod_1_peso = 0.0, prod_2_peso = 0.0, prod_3_peso = 0.0
+  ```
+
+  </TabItem>
+</Tabs>
+
+Observe que o problema está em que a cada novo produto é necessário declarar todas as variáveis
+
+Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja, um registro com um grupo de campos. Com isto, cada novo produto é composto por um registro.
+
+
+**Sintaxe**
+
+- Para definir um registro, utilizamos a seguinte sintaxe:
+
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  ```c
+  tipo <nome do registro> = registro
+                              <tipo do dado>: <nome do campo>;
+                            fimregistro
+  ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  ```javascript
+  public record <NomeDoRegistro> {
+    <tipo do dado> <nome do campo>;
+  }
+  ```
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+
+  ```python
+  from dataclasses import dataclass
+
+  @dataclass
+  class <NomeDoRegistro>:
+    <nome do campo>
+  ```
+  **Observação**  
+  Em Python, utilizaremos as **classes**, como registros, visto que atende aqui nossa finalidade didática. Classes são parte do paradigma de orientação a objetos, e possui muitas outras funcionalidades. Aqui estamos chamando de registros e seus campos, porém na verdade estamos utilizando classes e seus atributos.
+  </TabItem>
+</Tabs>
+
+**Exemplo**  
+- Produtos utilizando registros:
+
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  ```c
+  //especificação do registro
+  tipo Produto  = registro
+                    caractere: descricao;
+                    inteiro: lote;
+                    real: peso;
+                  fimregistro;
+
+  //declaração da variável do tipo do registro
+  Produto prod_1, prod_2, prod_3;
+  
+  ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  ```javascript
+  class Produto {
+    <tipo do dado> <nome do campo>;
+  }
+  ```
+
+  **Observação**  
+  Em Java, utilizaremos as **classes**, como registros, visto que atende aqui nossa finalidade didática. Classes são parte do paradigma de orientação a objetos, e possui muitas outras funcionalidades. Aqui estamos chamando de registros e seus campos, porém na verdade estamos utilizando classes e seus atributos.
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+
+  ```python
+  from dataclasses import dataclass
+
+  @dataclass
+  class <NomeDoRegistro>:
+    <nome do campo>
+  ```
+  **Observação**  
+  Em Python, utilizaremos as **classes**, como registros, visto que atende aqui nossa finalidade didática. Classes são parte do paradigma de orientação a objetos, e possui muitas outras funcionalidades. Aqui estamos chamando de registros e seus campos, porém na verdade estamos utilizando classes e seus atributos.
+  </TabItem>
+</Tabs>
+
