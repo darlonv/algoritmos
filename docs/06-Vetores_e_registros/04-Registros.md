@@ -99,7 +99,7 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
   <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
   ```c
-  tipo <nome do registro> = registro
+  tipo <nome do registro> ← registro
                               <tipo do dado>: <nome do campo>;
                             fimregistro
   ```
@@ -189,4 +189,110 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
 
   </TabItem>
 </Tabs>
+
+O acesso aos campos de cada registro é realizado utilizando `.` (ponto).
+
+**Exemplo**
+
+<Tabs groupId='language'>
+  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+  ```c
+  inicio
+  //especificação do registro
+  tipo Produto  = registro
+                    caractere: descricao;
+                    inteiro: lote;
+                    real: peso;
+                  fimregistro;
+
+  //declaração da variável do tipo do registro
+  Produto prod_1, prod_2, prod_3;
+
+  //definição dos valores a cada campo
+  prod_1.descricao ← "leite";
+  prod_1.lote ← 100;
+  prod_1.peso ← 0.750;
+
+  prod_2.descricao = "chocolate";
+  prod_2.lote ← 84;
+  prod_3.peso ← 0.150;
+
+  prod_3.descricao ← "agua mineral";
+  prod_3.lote ← 502;
+  prod_3.peso ← 0.450;
+  
+  ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+  ```javascript 
+  class Produto {
+    String descricao;
+    int lote;
+    float peso;
+  }
+
+  public class Main{
+    public static void main(String[] args){
+      //Declaração das variáveis do tipo do registro
+      Produto prod_1 = new Produto();
+      Produto prod_2 = new Produto();
+      Produto prod_3 = new Produto();
+
+      //definição dos valores a cada campo
+      prod_1.descricao = "leite";
+      prod_1.lote = 100;
+      prod_1.peso = 0.750f;
+
+      prod_2.descricao = "chocolate";
+      prod_2.lote = 84;
+      prod_3.peso = 0.150f;
+
+      prod_3.descricao = "agua mineral";
+      prod_3.lote = 502;
+      prod_3.peso = 0.450f;
+    }
+  }
+  ```
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+
+  ```python
+  from dataclasses import dataclass
+
+  @dataclass
+  class Produto:
+    descricao = ""
+    lote = 0
+    peso = 0.0
+
+  #variáveis
+  prod_1 = Produto()
+  prod_2 = Produto()
+  prod_3 = Produto()
+
+  #definição dos valores a cada campo
+  prod_1.descricao = "leite";
+  prod_1.lote = 100;
+  prod_1.peso = 0.750;
+
+  prod_2.descricao = "chocolate";
+  prod_2.lote = 84;
+  prod_3.peso = 0.150;
+
+  prod_3.descricao = "agua mineral";
+  prod_3.lote = 502;
+  prod_3.peso = 0.450;
+  ```
+
+  </TabItem>
+</Tabs>
+
+**Exercícios**
+
+
+
 
