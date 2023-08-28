@@ -86,7 +86,7 @@ Imagine agora que surgiu a necessidade de armazenar a informação de mais dois 
   </TabItem>
 </Tabs>
 
-Observe que o problema está em que a cada novo produto é necessário declarar todas as variáveis
+Observe que o problema está em que é necessário declarar uma a uma das variáveis correspondentes a cada produto.
 
 Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja, um registro com um grupo de campos. Com isto, cada novo produto é composto por um registro.
 
