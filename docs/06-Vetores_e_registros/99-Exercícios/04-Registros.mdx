@@ -7,14 +7,9 @@ import TabItem from '@theme/TabItem';
 
 ## Exercícios de fixação
 
-1. Implemente um programa que leia o nome, a idade e o endereço de uma pessoa e armazene os dados em um registro.
-
-1. Criar estruturas para representar:
-  
-  uma lista de chamada, para a estrutura aluno anteriormente definida, considerando um
-turma de 20 alunos e 10 aulas.
-um polinômio com até 20 termos, a partir da estrutura definida anteriormente para um
-único termo.
+1. Implemente um programa que leia o nome, a data de nascimento e o e-mail de uma pessoa e armazene os dados em um registro.
+  1. Inclua um campo adicional para armazenar dados de endereço, que consiste em um registro com os campos rua, número, CEP, cidade, estado e país.
+  1. Utilizando este registro, desenvolva um programa que permite armazenar uma lista telefônica com dados de 10 pessoas.
 
 1. Programe um registro que armazena as informações de um cartão de crédito.
 
@@ -82,12 +77,16 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
   </TabItem>
 </Tabs>
 
-1. Elabore um registro chamado `Tempo`, possuindo dois campos: `data` e `horario`. O campo `data` é um registro, que possui dia, mês e ano, e `horario` é um outro registyro, que por sua vez possui os campos `hora`, `minuto` e `segundo`. Elabore também as seguintes funções:
+1. Elabore um registro chamado `Tempo`, possuindo dois campos: `data` e `horario`. O campo `data` é um registro, que possui dia, mês e ano, e `horario` é um outro registro, que por sua vez possui os campos `hora`, `minuto` e `segundo`. Elabore também as seguintes funções:
     - `tempoNovo`, que retorna uma novo registro de tempo;
     - `tempoDefinirData`, que define a data em um registro;
     - `tempoDefinirHorario`, que permite definir o horário em um registro
     - `tempoDiferencaDias`, que recebe como parâmetro de entrada dois registros do tipo `Tempo`, e retorna a quantidade de dias entre eles;
     - `tempoDiferencaSegundos`,  que recebe como parâmetro de entrada dois registros do tipo `Tempo`, e retorna a quantidade de segundos entre eles;
+    - `tempoAntes`, que recebe dois parâmetros de entrada com registros do tipo `Tempo`: `referencial` e `evento`. A função deve retornar verdadeiro caso `evento` seja antes de `referencial`, e falso caso contrário;
+    - `tempoApos`,  semelhante à função `tempoAntes`, porém retorna verdadeiro caso `evento` seja após `referencial`.
+    - `tempoIgual`, que recebe como parâmetros de entrada dois registros do tipo `Tempo`. A função deve retornar verdadeiro caso o tempo nos dois registros seja igual, e falso caso não sejam.
+    - `tempoEntre`, que recebe como parâmetros três registros do tipo `Tempo`: `inicio`, `fim` e `evento`. A função deve retornar verdadeiro caso `evento` esteja no intervalo de tempo entre `inicio` e `fim`, e falso caso não esteja. 
     - Para calcular as diferenças de tempo, pesquise sobre as bibliotecas de manipulação de data e tempo (Java: `Date` e `SimpleDateFormat`, Python: `date` e `datetime`).
 
 1. a
