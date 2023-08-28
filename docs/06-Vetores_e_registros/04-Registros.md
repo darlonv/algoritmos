@@ -79,7 +79,7 @@ Imagine agora que surgiu a necessidade de armazenar a informação de mais dois 
 
   ```python
   prod_1_descricao = 0, prod_2_descricao = 0, prod_3_descricao = 0
-  prod_1_lotev, prod_2_lotev, prod_3_lote = 0
+  prod_1_lote, prod_2_lote, prod_3_lote = 0
   prod_1_peso = 0.0, prod_2_peso = 0.0, prod_3_peso = 0.0
   ```
 
@@ -108,10 +108,16 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
   <TabItem value="java" label="Java">
 
   ```javascript
-  public record <NomeDoRegistro> {
+  public class <NomeDoRegistro> {
     <tipo do dado> <nome do campo>;
   }
   ```
+
+:::caution Atenção
+  Em Java, utilizaremos o conceito de **classes** como registros, visto que atende aqui nossa finalidade didática. Classes fazem parte do paradigma de orientação a objetos, e possuem outras funcionalidades e finaliadades. Aqui estamos chamando de registros e seus campos, porém na verdade estamos utilizando classes e seus atributos.
+
+  Em Java há também o tipo **record**, que funciona como um registro. Porém, não será abordado neste material devido à sua característica de imutabilidade.
+:::
 
   </TabItem>
   <TabItem value="python" label="Python">
@@ -123,15 +129,14 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
   class <NomeDoRegistro>:
     <nome do campo>
   ```
-  **Observação**  
-  Em Python, utilizaremos as **classes**, como registros, visto que atende aqui nossa finalidade didática. Classes são parte do paradigma de orientação a objetos, e possui muitas outras funcionalidades. Aqui estamos chamando de registros e seus campos, porém na verdade estamos utilizando classes e seus atributos.
-
-  Em Java há também o tipo **record**, que funciona como um registro. Porém, não será abordado neste material devido à sua característica de imutabilidade.
+:::caution Atenção
+  Em Python, utilizaremos as **classes**, como registros, visto que atende aqui nossa finalidade didática. Classes são parte do paradigma de orientação a objetos, e possui muitas outras funcionalidades e finalidades. Aqui estamos chamando de registros e seus campos, porém na verdade estamos utilizando classes e seus atributos.
+:::
   </TabItem>
 </Tabs>
 
 **Exemplo**  
-- Produtos utilizando registros:
+- Declaração utilizando registros:
 
 <Tabs groupId='language'>
   <TabItem value="pseudocodigo" label="Pseudocódigo" default>
@@ -152,14 +157,22 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
   </TabItem>
   <TabItem value="java" label="Java">
 
-  ```javascript
+  ```javascript 
   class Produto {
-    <tipo do dado> <nome do campo>;
+    String descricao;
+    int lote;
+    float peso;
+  }
+
+  public class Main{
+    public static void main(String[] args){
+      //Declaração das variáveis do tipo do registro
+      Produto prod_1 = new Produto();
+      Produto prod_2 = new Produto();
+      Produto prod_3 = new Produto();
+    }
   }
   ```
-
-  **Observação**  
-  Em Java, utilizaremos as **classes**, como registros, visto que atende aqui nossa finalidade didática. Classes são parte do paradigma de orientação a objetos, e possui muitas outras funcionalidades. Aqui estamos chamando de registros e seus campos, porém na verdade estamos utilizando classes e seus atributos.
 
   </TabItem>
   <TabItem value="python" label="Python">
@@ -168,11 +181,12 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
   from dataclasses import dataclass
 
   @dataclass
-  class <NomeDoRegistro>:
-    <nome do campo>
+  class Produto:
+    descricao = ""
+    lote = 0
+    peso = 0.0
   ```
-  **Observação**  
-  Em Python, utilizaremos as **classes**, como registros, visto que atende aqui nossa finalidade didática. Classes são parte do paradigma de orientação a objetos, e possui muitas outras funcionalidades. Aqui estamos chamando de registros e seus campos, porém na verdade estamos utilizando classes e seus atributos.
+
   </TabItem>
 </Tabs>
 
