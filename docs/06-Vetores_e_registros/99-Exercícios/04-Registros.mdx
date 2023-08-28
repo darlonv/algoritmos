@@ -140,7 +140,43 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
 
 ## Desafios
 
-1. 
+1. Os lugares de um teatro costumam ser identificados através de filas e colunas. O serviço de reserva mantém um mapa que indica os lugares reservados e os ainda livres. Como lugares reservados entende-se como pedidos de reservas (com pagamento ainda não efetuado) e lugares comprados (com pagamento já efetuado). Neste contexto, se um pedido de reservas não for confirmado (pagamento efetuado), este poderá ser vendido a outra pessoa. Como exemplo, vamos considerar um teatro com $M = 15$ filas, numeradas de $0$ à $14$, cada fila com $N = 10$ cadeiras, conforme ilustrado a seguir.
+
+  ```
+  ################################
+               PALCO
+  ################################
+          
+  0  _ _ _ _ _ X X X X _ _ _ _ _ _
+  1  _ _ _ _ _ _ _ X X _ _ _ _ _ _
+  2  _ X X X _ _ _ _ _ _ _ _ _ _ _
+  3  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  4  _ _ _ _ _ _ _ _ R R R _ _ _ _
+  5  _ _ _ _ _ _ _ X X X _ _ _ _ _
+  6  _ _ _ _ X X _ _ X _ _ _ _ _ _
+  7  _ _ _ _ _ X _ _ _ _ X _ _ _ _
+  8  _ _ _ _ _ _ _ _ _ _ _ _ X _ _
+  9  _ _ X _ X _ _ _ _ _ _ _ _ _ _
+  10 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  11 _ _ _ _ _ R R R R R _ _ _ _ _
+  12 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  13 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  14 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  ```
+
+  Legenda:
+    - `_` : livre
+    - `X` : ocupada
+    - `R` : reservada
+
+  Desenvolva um sistema para gerenciar as reservas para um espetáculo, com menu para selecionar a opção desejada e que permita:
+    - visualizar o mapa de assentos
+    - realizar e cancelar reservas. Ao reservar deve ser informado se é ou não estudante (estudante paga metade do valor do ingresso);
+    - com uma reserva realizada, "receber" o pagamento
+    - deve fornecer também as seguintes informações:
+      - quantidades totais de lugares livres, reservados e confirmados;
+      - número total de ingressos de estudantes
+      - valor total arrecadado com os ingressos.
 
 1.  
 
