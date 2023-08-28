@@ -125,6 +125,8 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
   ```
   **Observação**  
   Em Python, utilizaremos as **classes**, como registros, visto que atende aqui nossa finalidade didática. Classes são parte do paradigma de orientação a objetos, e possui muitas outras funcionalidades. Aqui estamos chamando de registros e seus campos, porém na verdade estamos utilizando classes e seus atributos.
+
+  Em Java há também o tipo **record**, que funciona como um registro. Porém, não será abordado neste material devido à sua característica de imutabilidade.
   </TabItem>
 </Tabs>
 
