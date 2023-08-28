@@ -5,8 +5,8 @@ import java.util.Date;
 public class Data {
     // Function to print difference in
     // time start_date and end_date
-    static void diferencaEmDias(String data_inicio,
-            String data_fim) {
+    static void findDifference(String start_date,
+            String end_date) {
 
         // SimpleDateFormat converts the
         // string format to date object
