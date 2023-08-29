@@ -45,9 +45,6 @@ Considere como exemplo a seguinte situação: é necessário armazenar informaç
   </TabItem>
 </Tabs>
 
-
-Assim como nos vetores e matrizes, cada elemento pode acessado de maneira individual. 
-
 Imagine agora que surgiu a necessidade de armazenar a informação de mais dois produtos, ou seja, temos prod_1, prod_2 e prod_3. Será então necessário armazenar as informações de descrição, lote e peso para cada produto. Uma possível implementação seria:
 
 <Tabs groupId='language'>
@@ -99,7 +96,7 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
   <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
   ```c
-  tipo <nome do registro> ← registro
+  tipo <nome do registro> = registro
                               <tipo do dado>: <nome do campo>;
                             fimregistro
   ```
@@ -136,7 +133,7 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
 </Tabs>
 
 **Exemplo**  
-- Declaração utilizando registros:
+- Declaração de produtos utilizando registros:
 
 <Tabs groupId='language'>
   <TabItem value="pseudocodigo" label="Pseudocódigo" default>
@@ -190,7 +187,7 @@ Isto pode ser entendido como cada produto sendo um grupo de variáveis, ou seja,
   </TabItem>
 </Tabs>
 
-O acesso aos campos de cada registro é realizado utilizando `.` (ponto).
+Assim como nos vetores e matrizes, cada elemento pode acessado de maneira individual.  O acesso aos campos de cada registro é realizado utilizando `.` (ponto).
 
 **Exemplo**
 
@@ -275,17 +272,17 @@ O acesso aos campos de cada registro é realizado utilizando `.` (ponto).
   prod_3 = Produto()
 
   #definição dos valores a cada campo
-  prod_1.descricao = "leite";
-  prod_1.lote = 100;
-  prod_1.peso = 0.750;
+  prod_1.descricao = "leite"
+  prod_1.lote = 100
+  prod_1.peso = 0.750
 
-  prod_2.descricao = "chocolate";
-  prod_2.lote = 84;
-  prod_3.peso = 0.150;
+  prod_2.descricao = "chocolate"
+  prod_2.lote = 84
+  prod_3.peso = 0.150
 
-  prod_3.descricao = "agua mineral";
-  prod_3.lote = 502;
-  prod_3.peso = 0.450;
+  prod_3.descricao = "agua mineral"
+  prod_3.lote = 502
+  prod_3.peso = 0.450
   ```
 
   </TabItem>
