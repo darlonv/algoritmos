@@ -3,87 +3,55 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Data {
-    // Function to print difference in
-    // time start_date and end_date
-    static void diferencaEmDias(String data_inicio,
-            String data_fim) {
+    // Obtém a diferença entre segundos entre duas datas
+    static long tempoEmSegundos(String _data_inicio, String _data_fim) {
+        Date data_ini, data_fim;
+        SimpleDateFormat data_parse;
+        long tempo_milissegundos, tempo_segundos = 0;
+        
+        //Utiliza um objeto SimpleDateFormat, com o formato dos dados de entrada
+        data_parse = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
-        // SimpleDateFormat converts the
-        // string format to date object
-        SimpleDateFormat sdf = new SimpleDateFormat(
-                "dd-MM-yyyy HH:mm:ss");
+        try{
+                //Cria os objetos do tipo Date, já convertidos pelo SimpleDateFormat
+                data_ini = data_parse.parse(_data_inicio);
+                data_fim = data_parse.parse(_data_fim);
 
-        // Try Block
-        try {
+                //Calcula a diferença entre as datas em milisegundos
+                tempo_milissegundos = data_fim.getTime() - data_ini.getTime();
 
-            // parse method is used to parse
-            // the text from a string to
-            // produce the date
-            Date d1 = sdf.parse(start_date);
-            Date d2 = sdf.parse(end_date);
-
-            // Calculate time difference
-            // in milliseconds
-            long difference_In_Time = d2.getTime() - d1.getTime();
-
-            // Calculate time difference in
-            // seconds, minutes, hours, years,
-            // and days
-            long difference_In_Seconds = (difference_In_Time
-                    / 1000)
-                    % 60;
-
-            long difference_In_Minutes = (difference_In_Time
-                    / (1000 * 60))
-                    % 60;
-
-            long difference_In_Hours = (difference_In_Time
-                    / (1000 * 60 * 60))
-                    % 24;
-
-            long difference_In_Years = (difference_In_Time
-                    / (1000l * 60 * 60 * 24 * 365));
-
-            long difference_In_Days = (difference_In_Time
-                    / (1000 * 60 * 60 * 24))
-                    % 365;
-
-            // Print the date difference in
-            // years, in days, in hours, in
-            // minutes, and in seconds
-
-            System.out.print(
-                    "Difference "
-                            + "between two dates is: ");
-
-            System.out.println(
-                    difference_In_Years
-                            + " years, "
-                            + difference_In_Days
-                            + " days, "
-                            + difference_In_Hours
-                            + " hours, "
-                            + difference_In_Minutes
-                            + " minutes, "
-                            + difference_In_Seconds
-                            + " seconds");
+                //A partir dos milissegundos, calcula a diferença em segundos
+                tempo_segundos = tempo_milissegundos/1000;
         }
-
-        // Catch the Exception
         catch (ParseException e) {
             e.printStackTrace();
         }
+
+        return tempo_segundos;
+
+    }
+
+    static long tempoEmDias(String data_inicio, String data_fim) {
+
+        //Obtém a diferença em segundos
+        long tempo_segundos = tempoEmSegundos(data_inicio, data_fim);
+
+        //Converte os segundos para dias
+        long tempo_dias = tempo_segundos / (60 * 60 * 24);
+
+        return tempo_dias;
     }
 
     public static void dataMain() {
-        // Given start Date
-        String start_date = "10-01-2018 01:10:20";
+        // Data e hora iniciais
+        String start_date = "28-08-2023 19:00:00";
 
-        // Given end Date
-        String end_date = "10-06-2020 06:30:50";
+        // Data e hora finais
+        String end_date = "29-08-2023 19:11:00";
 
-        // Function Call
-        findDifference(start_date, end_date);
+        // Teste
+        System.out.printf("Tempo em segundos: %d segundos\n", tempoEmSegundos(start_date, end_date));
+        System.out.printf("Tempo em dias    : %d dias\n", tempoEmDias(start_date, end_date));
     }
 
     public static void main(String[] args) {

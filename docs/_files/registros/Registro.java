@@ -1,7 +1,17 @@
 import java.util.Scanner;
 
+class Produto    {
+    String descricao;
+    int lote;
+    float peso;
+}
 
 public class Registro {
+    
+    public static String registroProdutoParaString(Produto prod){
+        return String.format("%d:%f:%s", prod.lote, prod.peso, prod.descricao);
+    }
+
     public static void registro() {
         Produto prod_1 = new Produto();
         Produto prod_2 = new Produto();
@@ -11,12 +21,14 @@ public class Registro {
         prod_1.peso = 2.0f;
 
         System.out.println(prod_1.descricao);
+        System.out.println(registroProdutoParaString(prod_1));
 
         prod_2.descricao = "def";
         prod_2.lote = 1;
         prod_2.peso = 2.0f;
 
         System.out.println(prod_2.descricao);
+        System.out.println(registroProdutoParaString(prod_2));
 
     }
 
@@ -25,7 +37,6 @@ public class Registro {
     }
 
     public static void main(String[] args) {
-
         registroMain();
     }
 }
