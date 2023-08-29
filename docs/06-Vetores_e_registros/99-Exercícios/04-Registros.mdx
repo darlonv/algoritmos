@@ -12,34 +12,33 @@ import TabItem from '@theme/TabItem';
   1. Utilizando este registro, desenvolva um programa que permite armazenar uma lista telefônica com dados de 10 pessoas.
 
 1. Programe um registro que armazena as informações de um cartão de crédito.
+  1. Desenvolva uma função chamada `registroCartaoParaString`, que recebe como entrada o registro desenvolvido e retorna uma cadeia de caracteres, com o nome e os 4 últimos dígitos do cartão.
 
-1. Elabore um registro que represente um compromisso de agenda, possui os seguintes campos:
+1. Elabore um registro que represente um compromisso de agenda e possui os seguintes campos:
     - Compromisso (caractere);
     - Horário (registro, com hora, minuto e segundo);
     - Data (registro, com dia, mês e ano);
 
-1. Desenvolva um registro que armazena informações sobre o cadastro de uma pessoa. Seu registro deve armazenar nome, data de nascimento, sexo, país e cidade de nascimento.
-  - Inclua no registro um campo adicional que corresponde a outro registro. Este campo deve permitir registrar se a pessoa possui como dependentes os pais, o cônjuge ou filhos.
+1. Desenvolva um registro que armazena informações sobre o cadastro de uma pessoa. Deve armazenar nome, data de nascimento, sexo, país e cidade de nascimento.
+    - Inclua no registro um campo adicional que corresponde a outro registro. Este campo deve permitir registrar se a pessoa possui como dependentes os pais, o cônjuge ou filhos.
 
 1. Uma concessionária de automóveis usados está desenvolvendo um sistema para controle dos seus veículos. Desenvolva um registro que armazene as informações dos automóveis. O registro deve permitir armazenar os seguintes dados:
     - Ano do veículo
     - Cor
     - Placa
-    - Combustível (álcool, gasolina, diesel, flex)
+    - Combustível (álcool, gasolina, gás natural, elétrico, diesel, flex)
     - Marca
     - Modelo
     - Data de entrada na concessionária
     - Vendido (se já foi vendido ou se ainda está na concessionária)
     - Data em que foi vendido (vazio caso não tenha sido vendido)
+    1. Desenvolva uma função chamada `registroVeiculoParaString`, que recebe como entrada o registro desenvolvido e tenha como saída uma cadeia de caracteres com o modelo e ano do veículo.
 
-1. Crie uma estrutura representando os alunos de um determinado curso. A estrutura deve conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova e nota da terceira prova.
-    - Permita ao usuário entrar com os dados de 5 alunos.
-    - Encontre o aluno com maior nota da primeira prova.
-    - Encontre o aluno com maior media geral.
-    - Encontre o aluno com menor media geral.
-    - Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 6 para aprovação.
-
-1. 
+1. Crie uma estrutura representando os alunos de um determinado curso. A estrutura deve conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova e nota da terceira prova. Desenvolva um sistema que utiliza esta estrutura, de forma que o sistema permita cadastrar dados referentes a $5$ alunos, e após realizado o cadastro o sistema apresente:
+    - Qual foi o/a aluno/a com maior nota da primeira prova.
+    - Qual aluno/a possui a maior média geral.
+    - Qual aluno/a possui a menor média geral.
+    - Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 7 para aprovação.
 
 1. Crie uma estrutura representando os alunos de um determinado curso. A estrutura deve conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova e nota da terceira prova.
     - Permita ao usuário entrar com os dados de 5 alunos.
@@ -48,12 +47,9 @@ import TabItem from '@theme/TabItem';
     - Encontre o aluno com menor media geral.
     - Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 7 para aprovação.
 
-
 1. Elabore um programa que leia um vetor com os dados de $5$ carros: marca (máximo 15 letras), ano e preço. Leia um valor $p$ e mostre as informações de todos os carros com preço menor que $p$. Repita este processo até que seja lido um valor $p = 0$.
 
-1. 
-
-1.
+1. Desenvolva uma função que recebe como entrada um vetor de inteiros. A função deve retornar o maior **e** o menor valor presente no vetor.
 
 ## Procedimentos e funções
 
@@ -89,7 +85,6 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
     - `tempoEntre`, que recebe como parâmetros três registros do tipo `Tempo`: `inicio`, `fim` e `evento`. A função deve retornar verdadeiro caso `evento` esteja no intervalo de tempo entre `inicio` e `fim`, e falso caso não esteja. 
     - Para calcular as diferenças de tempo, pesquise sobre as bibliotecas de manipulação de data e tempo (Java: `Date` e `SimpleDateFormat`, Python: `date` e `datetime`).
 
-1. a
 
 ### Operações matemáticas
 
@@ -100,52 +95,9 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
 
 
 
-
-### Entrada e saída
-
-1.  
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1.
-
  ### Testes
 
 ## Problemas
-
-1.  
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1.
 
 ## Desafios
 
@@ -178,34 +130,18 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
     - `X` : ocupada
     - `R` : reservada
 
-  Desenvolva um sistema para gerenciar as reservas para um espetáculo, com menu para selecionar a opção desejada e que permita:
-    - visualizar o mapa de assentos
-    - realizar e cancelar reservas. Ao reservar deve ser informado se é ou não estudante (estudante paga metade do valor do ingresso);
-    - com uma reserva realizada, "receber" o pagamento
-    - deve fornecer também as seguintes informações:
-      - quantidades totais de lugares livres, reservados e confirmados;
-      - número total de ingressos de estudantes
-      - valor total arrecadado com os ingressos.
-
-1.  
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-
-1.
+  Desenvolva um sistema para gerenciar as reservas de um espetáculo. O sistema deve possuir menus com acesso para uma área administrativa e área de cliente. Nelas:
+    - o menu da área administrativa deve permitir:
+      - modificar o valor do ingresso (o valor padrão deve ser R$ 50,00)
+      - visualizar o mapa de assentos
+      - fornecer um relatório com as seguintes informações:
+        - quantidades totais de lugares livres, reservados e confirmados
+        - número total de ingressos de estudantes
+        - valor total arrecadado com os ingressos.
+    - e o menu da área de clientes deve permitir:
+      - visualizar o mapa de assentos;
+      - realizar e cancelar reservas. Ao reservar deve ser informado se o cliente é estudante (estudante paga metade do valor do ingresso);
+      - com uma reserva realizada, "receber" o pagamento e confirmar a reserva, marcando o assento como ocupado.
 
 ## Exercícios externos
 
