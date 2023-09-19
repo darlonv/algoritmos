@@ -1,0 +1,15 @@
+version: '3'
+services:
+  #Java
+  java:
+    image: openjdk
+    container_name: algoritmos_java
+    profiles: ['java']
+    stdin_open: true #docker run -i
+    tty: true        #docker run -t
+    volumes:
+      - ./_files:/src
+    working_dir: /src
+    command: /bin/bash
+
+
