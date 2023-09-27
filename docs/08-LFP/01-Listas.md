@@ -139,7 +139,7 @@ E para adicionarmos e removermos elementos
 
 
 **Exemplo**
-- neste exemplo é criada uma ista nova, e os seguintes passos são executados:
+- neste exemplo é criada uma lista nova, e os seguintes passos são executados:
     - Passo 1: a lista chamada `numeros` é criada, sem elementos
     - Passo 2: são acrescentados elementos com os valores $6$, $15$, $12$ e $30$
     - Passo 3: o elemento da posição $1$ é acessado e mostrado
