@@ -2,7 +2,7 @@ version: '3'
 services:
   #Java
   java:
-    image: openjdk
+    image: maven
     container_name: algoritmos_java
     profiles: ['java']
     stdin_open: true #docker run -i
