@@ -27,5 +27,30 @@ def quick_sort_lomuto(entrada):
     return entrada
 ```
 
+```javascript
+public class Ordenacao{
+    public static void troca(int[] v, int a, int b){
+        int tmp = v[a]
+        v[a] = v[b];
+        v[b] = tmp;
+    }
 
+    public static void quick_sort(int[] v){
+        quick_sort_(v, 0, v.length-1);
+    }
+
+    public static void quick_sort_(int[] v, int ini, int fim){
+        if (ini < fim){
+            int pos_pivot = particionamento(v, ini, fim);
+            quick_sort_(v, ini, pos_pivot -1);
+            quick_sort_(v, pos_pivot+1, fim);
+        }
+    }
+
+    public static int particionamento(int[] v, int ini, int fim){
+
+    }
+}
+
+```
 
